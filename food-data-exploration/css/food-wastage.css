@@ -1,0 +1,161 @@
+html {
+    height: 100%;
+    box-sizing: border-box
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+html,
+body {
+    font-size: 100%
+}
+body {
+    background: #fff;
+    color: #222;
+    cursor: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+html,
+body {
+    background: #ECF5FF;
+}
+body,
+.uiview {
+    height: 100%;
+    width: 3072vh;
+    overflow-y: hidden
+}
+
+#bgColor {
+	position: absolute;
+    width: 3072vh;
+    left: 0;
+    background: #ECF5FF;
+    top: 0;
+    height: 100%
+}
+
+.container {
+    z-index: 1;
+    overflow: hidden
+}
+.container,
+.scene {
+    height: 100%;
+    position: relative
+}
+.scene {
+    display: inline-block
+}
+
+.full-width {
+    height: 100%;
+    width: 100%
+}
+
+.mountains {
+	background: url("../images/transportation/mountains.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 5;
+    bottom: 10vh;
+    left: 15vh;
+    position: absolute;
+    height: 30vh;
+    width: 50vh;
+}
+
+.ground {
+	background: url("../images/transportation/ground.svg");
+    background-repeat: repeat;
+    background-size:contain;
+    z-index: 6;
+    bottom: 0vh;
+    left: 0vh;
+    position: absolute;
+    height: 19vh;
+    width: 215vh;
+}
+
+.trees {
+	background: url("../images/transportation/trees.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 5;
+    bottom: 15vh;
+    left: 120vh;
+    position: absolute;
+    height: 45vh;
+    width: 215vh;
+}
+
+.cloud-1 {
+	background: url("../images/transportation/cloud-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 64vh;
+    left: 76vh;
+    position: absolute;
+    height: 10vh;
+    width: 15vh;
+}
+
+.cloud-2 {
+	background: url("../images/transportation/cloud-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 73vh;
+    left: 130vh;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+}
+
+.cloud-3 {
+	background: url("../images/transportation/cloud-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 35vh;
+    left: 30vh;
+    position: absolute;
+    height: 20vh;
+    width: 17vh;
+}
+
+.truck {
+	background: url("../images/transportation/food-truck.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 8;
+    bottom: 18vh;
+    left: 5vh;
+    position: fixed;
+    height: 20vh;
+    width: 39vh;
+}
+
+#transportation-scene #food-truck {
+    -webkit-animation: shakeCar .1s infinite alternate;
+    animation: shakeCar .1s infinite alternate
+}
+@keyframes shakeCar {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px)
+    }
+}

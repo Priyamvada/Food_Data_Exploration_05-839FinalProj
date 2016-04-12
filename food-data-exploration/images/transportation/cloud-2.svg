@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="134px" height="79px" viewBox="0 0 134 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-381.000000, -470.000000)" fill="#FFFFFF">
+            <g id="cloud" transform="translate(381.000000, 470.000000)">
+                <path d="M72.6703455,78.1036632 C82.2084998,78.1036632 109.278372,80.3173524 115.96066,74.3779957 C124.016692,67.2176275 110.761493,50.8408498 110.761493,39.0518316 C110.761493,17.4841006 93.7075055,0 72.6703455,0 C51.6331856,0 34.5791979,17.4841006 34.5791979,39.0518316 C34.5791979,60.6195626 51.6331856,78.1036632 72.6703455,78.1036632 Z" id="Oval-181"></path>
+                <path d="M34.5791979,78.1036632 C53.6767615,78.1036632 91.0828378,81.5728201 91.0828378,67.3472954 C91.0828378,53.1217707 53.6767615,26.5884811 34.5791979,26.5884811 C15.4816342,26.5884811 0,38.1205474 0,52.3460721 C0,66.5715969 15.4816342,78.1036632 34.5791979,78.1036632 Z" id="Oval-183"></path>
+                <ellipse id="Oval-183" cx="103.197294" cy="50.1303654" rx="30.2567981" ry="27.9732978"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

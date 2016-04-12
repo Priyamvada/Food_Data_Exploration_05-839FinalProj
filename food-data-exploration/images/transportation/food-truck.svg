@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="220px" height="113px" viewBox="0 0 220 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Food Truck</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-97.000000, -588.000000)">
+            <g id="Food-Truck" transform="translate(97.000000, 588.000000)">
+                <rect id="Rectangle-70" fill="#AB6432" x="125.865385" y="79.3479624" width="17.6282051" height="7.43887147"></rect>
+                <rect id="Rectangle-70" fill="#AB6432" x="125.865385" y="69.4294671" width="17.6282051" height="7.43887147"></rect>
+                <path d="M143.49359,14.169279 L178.926282,14.169279 C178.926282,14.169279 196.87744,53.2923242 196.877443,53.2923241 C196.877445,53.292324 217.532051,63.7542964 217.532051,63.7542964 C217.532051,63.7542964 217.532051,91.3918495 217.532051,91.3918495 L143.49359,91.3918495 L143.49359,14.169279 Z" id="Rectangle-28" fill="#AB6432"></path>
+                <rect id="Rectangle-29" fill="#F5A623" x="2.82051282" y="0" width="128.333333" height="91.3918495"></rect>
+                <ellipse id="Oval-310" fill="#E0E0E0" cx="39.1346154" cy="91.7460815" rx="21.1538462" ry="21.2539185"></ellipse>
+                <ellipse id="Oval-310" fill="#E0E0E0" cx="179.102564" cy="91.7460815" rx="21.1538462" ry="21.2539185"></ellipse>
+                <ellipse id="Oval-310" fill="#602900" cx="39.1346154" cy="91.7460815" rx="15.8653846" ry="15.9404389"></ellipse>
+                <ellipse id="Oval-310" fill="#602900" cx="179.102564" cy="91.3918495" rx="15.8653846" ry="15.9404389"></ellipse>
+                <rect id="Rectangle-68" fill="#FFFFFF" x="149.487179" y="21.2539185" width="19.7435897" height="29.0470219" rx="8"></rect>
+                <path d="M175.929487,27.5566896 C175.929487,24.0757653 177.052944,23.8444163 178.433354,27.0274044 L186.022843,44.5274546 C187.40569,47.7160628 185.699647,50.3009404 182.228099,50.3009404 L182.228099,50.3009404 C178.749472,50.3009404 175.929487,47.4893972 175.929487,43.9981693 L175.929487,27.5566896 Z" id="Rectangle-68" fill="#FFFFFF"></path>
+                <g id="Group" transform="translate(49.006410, 21.253918)">
+                    <rect id="Rectangle-41" fill="#F7E8D5" x="0" y="0" width="36.3141026" height="47.1128527" rx="3"></rect>
+                    <g id="Group-7" transform="translate(18.647782, 28.464015)">
+                        <g id="Group-4">
+                            <ellipse id="Oval-192" fill="#F68D2F" cx="6.3795045" cy="6.37986546" rx="6.3795045" ry="6.37986546"></ellipse>
+                            <path d="M6.3795045,12.7597309 C9.90280755,12.7597309 12.759009,9.90336787 12.759009,6.37986546 C12.759009,2.85636306 9.90280755,0 6.3795045,0 C6.37950458,0 6.3795045,2.85636306 6.3795045,6.37986546 C6.3795045,9.90336787 6.37950458,12.7597309 6.3795045,12.7597309 Z" id="Oval-192" fill="#F76A28"></path>
+                        </g>
+                    </g>
+                    <g id="Group-7" transform="translate(3.925849, 23.556426)">
+                        <g id="Group-4">
+                            <ellipse id="Oval-192" fill="#F68D2F" cx="8.83316008" cy="8.83365987" rx="8.83316008" ry="8.83365987"></ellipse>
+                            <path d="M8.83316008,17.6673197 C13.7115797,17.6673197 17.6663202,13.7123555 17.6663202,8.83365987 C17.6663202,3.95496424 13.7115797,0 8.83316008,0 C8.83316019,0 8.83316008,3.95496424 8.83316008,8.83365987 C8.83316008,13.7123555 8.83316019,17.6673197 8.83316008,17.6673197 Z" id="Oval-192" fill="#F76A28"></path>
+                        </g>
+                    </g>
+                    <text id="Orange" font-family="AmericanTypewriter, American Typewriter" font-size="7.81517094" font-weight="normal" fill="#F66A29">
+                        <tspan x="4.90731116" y="13.8706243">Orange</tspan>
+                    </text>
+                </g>
+                <ellipse id="Oval-318" fill="#E0E0E0" cx="39.3108974" cy="91.5689655" rx="6.5224359" ry="6.55329154"></ellipse>
+                <ellipse id="Oval-318" fill="#E0E0E0" cx="179.278846" cy="91.5689655" rx="6.5224359" ry="6.55329154"></ellipse>
+                <rect id="Rectangle-73" fill="#8B572A" x="212.948718" y="81.4733542" width="7.05128205" height="11.6896552" rx="8"></rect>
+                <rect id="Rectangle-73" fill="#8B572A" x="0" y="81.4733542" width="14.4551282" height="11.6896552" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

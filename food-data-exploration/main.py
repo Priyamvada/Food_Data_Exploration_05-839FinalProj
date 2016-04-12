@@ -37,26 +37,6 @@ def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
     return template.render()
 
-@app.route('/foodviz1')
-def foodviz1():
-    template = JINJA_ENVIRONMENT.get_template('templates/foodviz1.html')
-    return template.render()
-
-@app.route('/foodviz2')
-def foodviz2():
-    template = JINJA_ENVIRONMENT.get_template('templates/foodviz2.html')
-    return template.render()
-
-@app.route('/foodviz3')
-def foodviz3():
-    template = JINJA_ENVIRONMENT.get_template('templates/foodviz3.html')
-    return template.render()
-
-@app.route('/foodviz4')
-def foodviz4():
-    template = JINJA_ENVIRONMENT.get_template('templates/foodviz4.html')
-    return template.render()
-
 @app.route('/references')
 def references():
     template = JINJA_ENVIRONMENT.get_template('templates/references.html')

@@ -1,78 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>tvmayirp Byte 4 - Visualization</title>
+<head>
+  <title>Jack the Orange | An interactive story on Food Waste</title>
 
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/tvmayirp-overrides.css" rel="stylesheet">
-		<link href="css/special-objects.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top project-header">
-      <div class="container">
-      	<div class="page-title">
-      		<h1>Final Project - Data Pipeline 05-839</h1>
-      		<h2>Food & Nutrition Around the World</h2>
-      	</div>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="foodviz1">Viz 1</a></li>
-            <li><a href="foodviz2">Viz 2</a></li>
-            <li><a href="foodviz3">Viz 3</a></li>
-            <li><a href="foodviz4">Viz 4</a></li>
-            <li><a href="references">References</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <nav class="navbar navbar-inverse navbar-fixed-top project-header">
-      <div class="container">
-        <div class="page-title">
-          <h1>Final Project - Data Pipeline 05-839</h1>
-          <h2>Food & Nutrition Around the World</h2>
-        </div>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="foodviz1">Viz 1</a></li>
-            <li><a href="foodviz2">Viz 2</a></li>
-            <li><a href="foodviz3">Viz 3</a></li>
-            <li><a href="foodviz4">Viz 4</a></li>
-            <li><a href="references">References</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-		<div id="outer-content">
-			<div id="content-panel">
+  <link href="css/food-wastage.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="full-width uiview">
+    <div id="bgColor"></div>
+    <div class="container full-width" id="scrollContainer">
+    <section class="scene" id="transportation-scene">
+      <div id="trigger1"></div>
+      <div class="mountains"></div>
+      <div class="ground"></div>
+      <div class="trees"></div>
+      <div class="cloud-1"></div>
+      <div class="cloud-2"></div>
+      <div class="cloud-3"></div>
+      <div id="food-truck" class="truck"></div>
+    </section>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- The Scroll Magic Library START-->
+  <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <!-- The Scroll Magic Library END-->
 
-      </div>
-      
+  <script type="text/javascript">
+    // init controller
+    var controller = new ScrollMagic.Controller();
 
-		</div>
-		
+    // build tween
+      var tween = TweenMax.fromTo(".cloud-1", 1,
+                    {left: -100},
+                    {left: 100, repeat: -1, yoyo: true, ease: Circ.easeInOut}
+                  );
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-
-	</body>
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200, offset: -50})
+              .setTween(tween)
+              .addIndicators({name: "loop"}) // add indicators (requires plugin)
+              .addTo(controller);
+  </script>
+</body>
 </html>
