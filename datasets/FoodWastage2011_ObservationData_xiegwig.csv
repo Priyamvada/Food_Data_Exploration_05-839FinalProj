@@ -1,0 +1,11 @@
+"Region","Variable","Commodity","Unit","Date","Value"
+"Europe incl Russia","Postharvest handling and Storage","Meat","%","1/1/2011 12:00:00 AM",0.7
+"Europe incl Russia","Agricultural production","Meat","%","1/1/2011 12:00:00 AM",3.1
+"Europe incl Russia","Processing and packaging","Meat","%","1/1/2011 12:00:00 AM",5
+"Europe incl Russia","Consumption","Meat","%","1/1/2011 12:00:00 AM",11
+"Europe incl Russia","Distribution: Supermarket Retail","Meat","%","1/1/2011 12:00:00 AM",4
+"sub-Saharan Africa","Postharvest handling and Storage","Meat","%","1/1/2011 12:00:00 AM",0.7
+"sub-Saharan Africa","Agricultural production","Meat","%","1/1/2011 12:00:00 AM",15
+"sub-Saharan Africa","Processing and packaging","Meat","%","1/1/2011 12:00:00 AM",5
+"sub-Saharan Africa","Distribution","Meat","%","1/1/2011 12:00:00 AM",7
+"sub-Saharan Africa","Consumption","Meat","%","1/1/2011 12:00:00 AM",2
