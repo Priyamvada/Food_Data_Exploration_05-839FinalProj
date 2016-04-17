@@ -61,20 +61,21 @@ body,
     width: 100%
 }
 
-.mountains {
-	background: url("../images/transportation/mountains.svg");
+/*Food Transportation Screen-I START*/
+#transportation-scene-I .mountains {
+    background: url("../images/transportation/mountains.svg");
     background-repeat: no-repeat;
     background-size:contain;
     z-index: 5;
     bottom: 10vh;
     left: 15vh;
     position: absolute;
-    height: 30vh;
-    width: 50vh;
+    height: 55vh;
+    width: 76vh;
 }
 
-.ground {
-	background: url("../images/transportation/ground.svg");
+#transportation-scene-I .ground {
+    background: url("../images/farm-transport/ground.svg");
     background-repeat: repeat;
     background-size:contain;
     z-index: 6;
@@ -82,11 +83,11 @@ body,
     left: 0vh;
     position: absolute;
     height: 19vh;
-    width: 215vh;
+    width: 205vh;
 }
 
-.trees {
-	background: url("../images/transportation/trees.svg");
+#transportation-scene-I .trees {
+    background: url("../images/farm-transport/trees.svg");
     background-repeat: no-repeat;
     background-size:contain;
     z-index: 5;
@@ -97,8 +98,8 @@ body,
     width: 215vh;
 }
 
-.cloud-1 {
-	background: url("../images/transportation/cloud-1.svg");
+#transportation-scene-I .cloud-1 {
+    background: url("../images/farm-transport/cloud-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 5;
@@ -109,8 +110,8 @@ body,
     width: 15vh;
 }
 
-.cloud-2 {
-	background: url("../images/transportation/cloud-2.svg");
+#transportation-scene-I .cloud-2 {
+    background: url("../images/farm-transport/cloud-2.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 5;
@@ -121,31 +122,31 @@ body,
     width: 20vh;
 }
 
-.cloud-3 {
-	background: url("../images/transportation/cloud-3.svg");
+#transportation-scene-I .cloud-3 {
+    background: url("../images/farm-transport/cloud-3.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 5;
     bottom: 35vh;
     left: 30vh;
     position: absolute;
-    height: 20vh;
+    height: 17vh;
     width: 17vh;
 }
 
-.truck {
-	background: url("../images/transportation/food-truck.svg");
+#transportation-scene-I .truck {
+    background: url("../images/farm-transport/food-truck.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 8;
-    bottom: 18vh;
+    bottom: 16.5vh;
     left: 5vh;
-    position: fixed;
+    position: absolute;/*Change to fixed after pass*/
     height: 20vh;
     width: 39vh;
 }
 
-#transportation-scene #food-truck {
+#transportation-scene-I #food-truck {
     -webkit-animation: shakeCar .1s infinite alternate;
     animation: shakeCar .1s infinite alternate
 }
@@ -159,3 +160,193 @@ body,
         transform: translateY(1px)
     }
 }
+/*Food Transportation Screen-I END*/
+
+/*Food Processing Scene START*/
+#food-processing-scene .building-1 {
+    background: url("../images/processing/building-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: -5vh;
+    left: 203.8vh;
+    position: absolute;
+    height: 67vh;
+    width: 87vh;
+}
+
+#food-processing-scene .building-2 {
+    background: url("../images/processing/building-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: -5vh;
+    left: 267.8vh;
+    position: absolute;
+    height: 94vh;
+    width: 87vh;
+}
+
+#food-processing-scene .building-3 {
+    background: url("../images/processing/building-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: -5vh;
+    left: 312.8vh;
+    position: absolute;
+    height: 94vh;
+    width: 97vh;
+}
+
+#food-processing-scene .cloud-1 {
+    background: url("../images/processing/cloud-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 72vh;
+    left: 203.8vh;
+    position: absolute;
+    height: 19vh;
+    width: 27vh;
+}
+
+#food-processing-scene .cloud-2 {
+    background: url("../images/processing/cloud-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 72vh;
+    left: 356.8vh;
+    position: absolute;
+    height: 19vh;
+    width: 27vh;
+}
+
+#food-processing-scene .apparatus {
+    background: url("../images/processing/apparatus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 8;
+    bottom: -17vh;
+    left: 209.8vh;
+    position: absolute;
+    height: 77vh;
+    width: 104vh;
+}
+/*Food Processing Scene END*/
+
+
+/*Food Transportation Screen-II START*/
+#transportation-scene-II .mountains {
+	background: url("../images/transportation/mountains.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 5;
+    bottom: 10vh;
+    left: 392vh;
+    position: absolute;
+    height: 30vh;
+    width: 50vh;
+}
+
+#transportation-scene-II .ground {
+	background: url("../images/transportation/ground.svg");
+    background-repeat: repeat;
+    background-size:contain;
+    z-index: 6;
+    bottom: 0vh;
+    left: 377.5vh;
+    position: absolute;
+    height: 19vh;
+    width: 215vh;
+}
+
+#transportation-scene-II .trees {
+	background: url("../images/transportation/trees.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 5;
+    bottom: 15vh;
+    left: 497vh;
+    position: absolute;
+    height: 45vh;
+    width: 215vh;
+}
+
+#transportation-scene-II .cloud-1 {
+	background: url("../images/transportation/cloud-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 64vh;
+    left: 453vh;
+    position: absolute;
+    height: 10vh;
+    width: 15vh;
+}
+
+#transportation-scene-II .cloud-2 {
+	background: url("../images/transportation/cloud-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 73vh;
+    left: 507vh;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+}
+
+#transportation-scene-II .cloud-3 {
+	background: url("../images/transportation/cloud-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 35vh;
+    left: 407vh;
+    position: absolute;
+    height: 20vh;
+    width: 17vh;
+}
+
+#transportation-scene-II .truck {
+	background: url("../images/transportation/food-truck.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 8;
+    bottom: 18vh;
+    left: 382vh;
+    position: absolute;/*Change to fixed after pass*/
+    height: 20vh;
+    width: 39vh;
+}
+
+#transportation-scene-II .oranges {
+    background: url("../images/transportation/food-truck.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 8;
+    bottom: 18vh;
+    left: 382vh;
+    position: fixed;
+    height: 20vh;
+    width: 39vh;
+}
+
+#transportation-scene-II #food-truck {
+    -webkit-animation: shakeCar .1s infinite alternate;
+    animation: shakeCar .1s infinite alternate
+}
+@keyframes shakeCar {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px)
+    }
+}
+/*Food Transportation Screen-II END*/
+

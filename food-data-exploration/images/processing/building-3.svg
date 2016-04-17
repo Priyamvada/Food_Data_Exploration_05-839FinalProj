@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="629px" height="887px" viewBox="0 0 629 887" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>Building 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-811.000000, -137.000000)">
+            <g id="Building-3" transform="translate(811.000000, 137.000000)">
+                <polygon id="Rectangle-50" fill="#95B3BE" points="230.583712 0 295.81008 0 348.301102 580 180 580"></polygon>
+                <polygon id="Rectangle-50" fill="#95B3BE" points="410.721626 178 490.310043 178 554.358946 758 349 758"></polygon>
+                <rect id="Rectangle-49" fill="#B5CAD2" x="0" y="468" width="629" height="419"></rect>
+                <g id="Group-6" transform="translate(129.000000, 554.000000)" fill="#95B3BE">
+                    <rect id="Rectangle-53" x="0" y="0" width="64" height="96"></rect>
+                    <rect id="Rectangle-53" x="103" y="0" width="64" height="96"></rect>
+                    <rect id="Rectangle-53" x="207" y="0" width="64" height="96"></rect>
+                    <rect id="Rectangle-53" x="310" y="0" width="64" height="96"></rect>
+                    <rect id="Rectangle-53" x="413" y="0" width="64" height="96"></rect>
+                </g>
+                <rect id="Rectangle-67" fill="#95B3BE" x="296" y="712" width="143" height="175"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
