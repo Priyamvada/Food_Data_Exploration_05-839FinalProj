@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="172px" viewBox="0 0 1440 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>Ground</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(0.000000, -852.000000)">
+            <g id="Ground" transform="translate(0.000000, 852.000000)">
+                <rect id="Rectangle-75" fill="#DE9547" x="0" y="0" width="1440" height="185"></rect>
+                <g id="Group-5" transform="translate(55.000000, 54.000000)" stroke="#D48938" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M60.5,6.5 L352.5,6.5" id="Line"></path>
+                    <path d="M86.5,40.5 L241.5,40.5" id="Line"></path>
+                    <path d="M0.5,74.5 L292.5,74.5" id="Line"></path>
+                    <path d="M584.5,6.5 L841.5,6.5" id="Line"></path>
+                    <path d="M496.5,40.5 L847.5,40.5" id="Line"></path>
+                    <path d="M635.5,74.5 L781.5,74.5" id="Line"></path>
+                    <path d="M1057.5,4.5 L1297.5,4.5" id="Line"></path>
+                    <path d="M1130.5,37.5 L1285.5,37.5" id="Line"></path>
+                    <path d="M988.5,72.5 L1237.5,72.5" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
