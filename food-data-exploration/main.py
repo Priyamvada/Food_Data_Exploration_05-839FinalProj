@@ -34,6 +34,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    template = JINJA_ENVIRONMENT.get_template('templates/home.html')
+    return template.render()
+
+@app.route('/index')
+def narrative():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
     return template.render()
 

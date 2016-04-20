@@ -1,0 +1,37 @@
+/* Style for our header texts*/
+h1 {
+	font-size: 5em;
+}
+h2 {
+	font-size: 2em;
+}
+h1, h2, h3, h4{
+	font-family: arial,helvetica;
+	margin:0;
+}
+
+.inverted {
+	color: #FFFFFF;
+}
+
+/* Centered texts in each section*/
+.section{
+	text-align:center;
+}
+
+.slide {
+	width: 80%;
+}
+/* Overwriting styles for control arrows for slides*/
+.controlArrow.prev {
+	left: 50px;
+}
+.controlArrow.next{
+	right: 50px;
+}
+
+/* Bottom menu*/
+#infoMenu li a {
+	color: #fff;
+}
+
