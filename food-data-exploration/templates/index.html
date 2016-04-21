@@ -66,18 +66,19 @@
   <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <!-- The Scroll Magic Library END-->
+  <script src="../js/jquery.mousewheel.min.js"></script>
   <script type="text/javascript">
-    // init controller
-    var controller = new ScrollMagic.Controller({vertical: false});
+  $(function() {
 
-    // build tween
-    var tween = TweenMax.to("#target", 0.5, {backgroundColor: "green", width: "+=400"});
+   $("body").mousewheel(function(event, delta) {
 
-    // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500})
-          .setTween(tween)
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
+      this.scrollLeft -= (delta);
+    
+      event.preventDefault();
+
+   });
+
+});
 
   </script>
 </body>
