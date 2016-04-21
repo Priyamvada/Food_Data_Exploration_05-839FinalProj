@@ -12,6 +12,9 @@
     <div id="bgColor"></div>
     <div class="container full-width" id="scrollContainer">
     <section class="scene" id="transportation-scene-I">
+      <div class="text-1">
+        <h3>This is the farm. Too big and too small oranges are never harvested (4%). Amount of water that goes into growing a single orange can be estimated to be 13.8 gallons.</h3>
+      </div>
       <div id="food-truck" class="truck"></div>
       <div class="mountains"></div>
       <div class="trees"></div>
@@ -21,6 +24,9 @@
       <div class="cloud-3"></div>
     </section>
     <section class="scene" id="food-processing-scene">
+      <div class="text-2">
+        <h3>About 3% is wasted in transport which includes storage and shipping.</h3>
+      </div>
       <div class="apparatus"></div>
       <div class="building-1"></div>
       <div class="building-2"></div>
@@ -29,6 +35,9 @@
       <div class="cloud-2"></div>
     </section>
     <section class="scene" id="transportation-scene-II">
+      <div class="text-3">
+        <h3>About 7 % is wasted in processing. This also involves food rejection due to ugly appearance. 75% of this rejected food is considered edible.</h3>
+      </div>
       <div class="mountains"></div>
       <div class="ground"></div>
       <div class="trees"></div>
@@ -65,26 +74,14 @@
   <script src="../js/jquery.mousewheel.min.js"></script>
   <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.0.js"></script>
+  
   <script type="text/javascript">
   // init controller
   var controller = new ScrollMagic.Controller({vertical: false});
-  
-  // create a scene for food truck
-  new ScrollMagic.Scene({
-        duration: "650vh",    // the scene should last for a scroll distance of 100vh
-        offset: "5vh"        // start this scene after scrolling for 50vh
-    })
-    .setPin("#food-truck") // pins the element for the the scene's duration
-    .addTo(controller); // assign the scene to the controller
-
-    // create a scene
-  new ScrollMagic.Scene({
-        duration: "680vh",    // the scene should last for a scroll distance of 100vh
-        offset: "1200vh"        // start this scene after scrolling for 50vh
-    })
-    .setPin("#food-truck-2") // pins the element for the the scene's duration
-    .addTo(controller); // assign the scene to the controller
   </script>
+  
+  <!-- Horizontal Scroll -->
   <script type="text/javascript">
     $(function() {
 
@@ -97,7 +94,6 @@
      });
 
   });
-
   </script>
 </body>
 </html>

@@ -519,3 +519,33 @@ body,
     width: 65vh;
 }
 /*Garbage END*/
+
+.text-1 {
+    position: absolute;
+    z-index: 9;
+    bottom: 73vh;
+    left: 79vh;
+    width: 120vh;
+    height: 13vh;
+    background-size: contain;
+}
+
+.text-2 {
+    position: absolute;
+    z-index: 9;
+    bottom: 73vh;
+    left: 279vh;
+    width: 120vh;
+    height: 13vh;
+    background-size: contain;
+}
+
+.text-3 {
+    position: absolute;
+    z-index: 9;
+    bottom: 73vh;
+    left: 479vh;
+    width: 120vh;
+    height: 13vh;
+    background-size: contain;
+}
