@@ -108,6 +108,19 @@ body,
     position: absolute;
     height: 10vh;
     width: 15vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
+}
+
+@keyframes cloudAnimation{
+    0%{
+        transform: translateX(0)
+    }
+    50%{
+        transform: translateX(10vh)
+    }
+    100%{
+        transform: translateX(-10vh)
+    }
 }
 
 #transportation-scene-I .cloud-2 {
@@ -120,6 +133,7 @@ body,
     position: absolute;
     height: 20vh;
     width: 20vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #transportation-scene-I .cloud-3 {
@@ -132,6 +146,7 @@ body,
     position: absolute;
     height: 17vh;
     width: 17vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #transportation-scene-I .truck {
@@ -200,7 +215,7 @@ body,
 }
 
 #food-processing-scene .cloud-1 {
-    background: url("../images/processing/cloud-1.svg");
+    background: url("../images/processing/cloud-2.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 5;
@@ -209,6 +224,7 @@ body,
     position: absolute;
     height: 19vh;
     width: 27vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #food-processing-scene .cloud-2 {
@@ -221,6 +237,7 @@ body,
     position: absolute;
     height: 19vh;
     width: 27vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #food-processing-scene .apparatus {
@@ -284,6 +301,7 @@ body,
     position: absolute;
     height: 10vh;
     width: 15vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #transportation-scene-II .cloud-2 {
@@ -296,6 +314,7 @@ body,
     position: absolute;
     height: 20vh;
     width: 20vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #transportation-scene-II .cloud-3 {
@@ -308,6 +327,7 @@ body,
     position: absolute;
     height: 20vh;
     width: 17vh;
+    animation: cloudAnimation 30s infinite normal ease-out;
 }
 
 #transportation-scene-II .truck {

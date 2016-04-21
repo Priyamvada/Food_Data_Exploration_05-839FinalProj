@@ -12,10 +12,6 @@
     <div id="bgColor"></div>
     <div class="container full-width" id="scrollContainer">
     <section class="scene" id="transportation-scene-I">
-      <div class="spacer s2"></div>
-      <div id="trigger" class="spacer s0"></div>
-      <div id="target" class="box2 blue"></div>
-      <div class="spacer s2"></div>
       <div id="food-truck" class="truck"></div>
       <div class="mountains"></div>
       <div class="trees"></div>
@@ -39,7 +35,7 @@
       <div class="cloud-1"></div>
       <div class="cloud-2"></div>
       <div class="cloud-3"></div>
-      <div id="food-truck" class="truck"></div>
+      <div id="food-truck-2" class="truck"></div>
     </section>
     <section class="scene" id="market">
       <div class="ground"></div>
@@ -67,18 +63,40 @@
   <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <!-- The Scroll Magic Library END-->
   <script src="../js/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
   <script type="text/javascript">
-  $(function() {
+  // init controller
+  var controller = new ScrollMagic.Controller({vertical: false});
+  
+  // create a scene for food truck
+  new ScrollMagic.Scene({
+        duration: "650vh",    // the scene should last for a scroll distance of 100vh
+        offset: "5vh"        // start this scene after scrolling for 50vh
+    })
+    .setPin("#food-truck") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
 
-   $("body").mousewheel(function(event, delta) {
+    // create a scene
+  new ScrollMagic.Scene({
+        duration: "680vh",    // the scene should last for a scroll distance of 100vh
+        offset: "1200vh"        // start this scene after scrolling for 50vh
+    })
+    .setPin("#food-truck-2") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
+  </script>
+  <script type="text/javascript">
+    $(function() {
 
-      this.scrollLeft -= (delta);
-    
-      event.preventDefault();
+     $("body").mousewheel(function(event, delta) {
 
-   });
+        this.scrollLeft -= (delta);
+      
+        event.preventDefault();
 
-});
+     });
+
+  });
 
   </script>
 </body>
