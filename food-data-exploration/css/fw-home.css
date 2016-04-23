@@ -17,10 +17,29 @@ h1, h2, h3, h4{
 /* Centered texts in each section*/
 .section{
 	text-align:center;
+	box-shadow: 0px 8px 5px #000000;
+}
+
+.section .intro{
+	text-align:left;
+	margin-left:10%;
+}
+
+em {
+	color: #FD614E;
+}
+
+.intro-slide {
+	margin-left: 25%;
 }
 
 .slide {
 	width: 80%;
+	text-align:center;
+}
+
+.slide h3 {
+	width: 70%;
 }
 /* Overwriting styles for control arrows for slides*/
 .controlArrow.prev {
@@ -35,3 +54,38 @@ h1, h2, h3, h4{
 	color: #fff;
 }
 
+.ground {
+    background: url("../images/homepage/ground.svg");
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 0vh;
+    left: 0vh;
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+}
+
+.journey-text {
+    background: url("../images/homepage/journey-text.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 33vh;
+    left: 30vh;
+    position: absolute;
+    height: 36vh;
+    width: 80vh;
+}
+
+.door {
+	background: url("../images/homepage/door.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: -1%;
+    left: 50%;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}

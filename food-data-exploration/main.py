@@ -42,6 +42,11 @@ def narrative():
     template = JINJA_ENVIRONMENT.get_template('templates/story.html')
     return template.render()
 
+@app.route('/action')
+def action():
+    template = JINJA_ENVIRONMENT.get_template('templates/action.html')
+    return template.render()
+
 @app.route('/references')
 def references():
     template = JINJA_ENVIRONMENT.get_template('templates/references.html')

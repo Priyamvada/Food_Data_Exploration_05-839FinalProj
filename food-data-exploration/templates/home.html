@@ -12,11 +12,11 @@
 </head>
 <style>
 #banner {
-	background-image: url(images/giphy.gif);
+	background-image: url(../images/homepage/garbage.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: right bottom;
+	background-size: 30%;
 }
-
 </style>
 <body>
 
@@ -24,36 +24,41 @@
 <div id="fullpage">
 	<div class="section" id="banner">
 		<div class="intro">
-			<h1 class="inverted">Food Waste</h1>
-			<p class="inverted">The clock is ticking</p>
+			<h1 class="inverted">Hunger Games</h1>
+			<br/>
+			<h4 class="inverted">An Interactive Story on Food Waste</h4>
 		</div>
 	</div>
 	<div class="section">
 	    <div class="slide">
-			<div class="intro">
-				<h2 class="inverted">"127.6 billion dollars is the value of food wasted by Americans every year"</h2>
-				<p class="inverted">74.6 billion dollar is the value of food stamps issued every year by the US government.</p>
+			<div class="intro-slide">
+				<h3 class="inverted">"<em>127.6 billion dollars</em> is the value of food wasted by Americans every year...<em>74.6 billion dollars</em> is the value of food stamps issued every year by the US government."</h3>
 			</div>
 		</div>
 
 	    <div class="slide">
-			<h2 class="inverted">Worldwide, land the size of 1 and a half USA is used to grow food, livestock or dairy production that <em>no one would eat.</em></h2>
+	    	<div class="intro-slide">
+				<h3 class="inverted">"Worldwide, land the size of 1 and a half USA is used to grow food, livestock or dairy production that <em>no one would eat."</em></h3>
+			</div>
 		</div>
 
 		<div class="slide">
-			<h2 class="inverted">If food waste was a country it would be the third biggest greenhouse gas emitter after US and China.</em></h2>
+			<div class="intro-slide">
+				<h3 class="inverted">"If food waste was a country it would be the third biggest greenhouse gas emitter after US and China."</em></h3>
+			</div>
 		</div>
 
 		<div class="slide">
-			<h2 class="inverted">Water lost in growing food can be used by households of US, Canada and Mexico combined for a year.</em></h2>
+			<div class="intro-slide">
+				<h3 class="inverted">"Water lost in growing food can be used by households of US, Canada and Mexico combined for a year."</em></h3>
+			</div>
 		</div>
 		
 	</div>
-	<div class="section">
-		<div class="intro">
-			<h2>Wanna explore the problem even more?</h2>
-			<p>Come let's go on a <a href="story">journey...</a></p>
-		</div>
+	<div class="section" id="journey">
+		<div class="ground"></div>
+		<div class="door"></div>
+		<div class="journey-text"></div>
 	</div>
 </div>
 
@@ -71,7 +76,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#C63D0F', '#1B1C1D', '#FFFFFF'],
+				sectionsColor: ['#4A4A4A', '#292929', '#4A4A4A'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['Introduction', 'Problem Urgency', 'Let\'s go on a journey']
