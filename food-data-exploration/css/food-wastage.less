@@ -1,6 +1,14 @@
 @groundheight: 19vh;
 @backgroundblue: #ECF5FF;
 
+@offsetLeft_farm: 0vh;
+@offsetLeft_transportI: @offsetLeft_farm + 0vh;
+@offsetLeft_processing: @offsetLeft_transportI + 205vh;
+@offsetLeft_transportII: @offsetLeft_processing + 173.4vh;
+@offsetLeft_market: @offsetLeft_transportII + 214.6vh;
+@offsetLeft_home: @offsetLeft_market + 214vh;
+@offsetLeft_garbage: @offsetLeft_home + 215vh;
+
 
 html {
     height: 100%;
@@ -82,7 +90,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 10vh;
-        left: 15vh;
+        left: @offsetLeft_farm + 15vh;
         position: absolute;
         height: 55vh;
         width: 76vh;
@@ -94,9 +102,9 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: 0vh;
+        left: @offsetLeft_farm;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 205vh;
     }
 
@@ -106,7 +114,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 15vh;
-        left: 120vh;
+        left: @offsetLeft_farm + 120vh;
         position: absolute;
         height: 45vh;
         width: 215vh;
@@ -118,7 +126,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 64vh;
-        left: 76vh;
+        left: @offsetLeft_farm + 76vh;
         position: absolute;
         height: 10vh;
         width: 15vh;
@@ -131,7 +139,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 73vh;
-        left: 130vh;
+        left: @offsetLeft_farm + 130vh;
         position: absolute;
         height: 20vh;
         width: 20vh;
@@ -144,7 +152,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 35vh;
-        left: 30vh;
+        left: @offsetLeft_farm + 30vh;
         position: absolute;
         height: 17vh;
         width: 17vh;
@@ -157,10 +165,15 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: 16.5vh;
-        left: 5vh;
+        left: @offsetLeft_farm + 5vh;
         position: fixed;
         height: 20vh;
         width: 39vh;
+    }
+
+    .truck.moving   {
+        left: @offsetLeft_farm + 5vh;
+        position: absolute;
     }
 
     #food-truck {
@@ -169,7 +182,7 @@ body,
     }
 
     .story-text {
-        left: 79vh;
+        left: @offsetLeft_farm + 79vh;
     }
 }
 
@@ -210,7 +223,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: -5vh;
-        left: 203.8vh;
+        left: @offsetLeft_processing;
         position: absolute;
         height: 67vh;
         width: 87vh;
@@ -222,7 +235,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: -5vh;
-        left: 267.8vh;
+        left: @offsetLeft_processing + 62.3vh;
         position: absolute;
         height: 94vh;
         width: 87vh;
@@ -234,7 +247,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: -5vh;
-        left: 312.8vh;
+        left: @offsetLeft_processing + 107.3vh;
         position: absolute;
         height: 94vh;
         width: 97vh;
@@ -246,9 +259,9 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 72vh;
-        left: 203.8vh;
+        left: @offsetLeft_processing;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 27vh;
         animation: cloudAnimation 30s infinite normal ease-out;
     }
@@ -259,9 +272,9 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 72vh;
-        left: 356.8vh;
+        left: @offsetLeft_processing + 151.3vh;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 27vh;
         animation: cloudAnimation 30s infinite normal ease-out;
     }
@@ -272,14 +285,14 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: -17vh;
-        left: 209.8vh;
+        left: @offsetLeft_processing + 5.5vh;
         position: absolute;
         height: 77vh;
         width: 104vh;
     }
 
     .story-text {
-        left: 279vh;
+        left: @offsetLeft_processing + 74.5vh;
     }
 }
 
@@ -290,7 +303,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 10vh;
-        left: 392vh;
+        left: @offsetLeft_transportII + 13.6vh;
         position: absolute;
         height: 30vh;
         width: 50vh;
@@ -302,9 +315,9 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: 378.4vh;
+        left: @offsetLeft_transportII;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 215vh;
     }
 
@@ -314,7 +327,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 15vh;
-        left: 497vh;
+        left: @offsetLeft_transportII + 118.6vh;
         position: absolute;
         height: 45vh;
         width: 215vh;
@@ -326,7 +339,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 64vh;
-        left: 453vh;
+        left: @offsetLeft_transportII + 74.6vh;
         position: absolute;
         height: 10vh;
         width: 15vh;
@@ -339,7 +352,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 73vh;
-        left: 507vh;
+        left: @offsetLeft_transportII + 128.6vh;
         position: absolute;
         height: 20vh;
         width: 20vh;
@@ -352,7 +365,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 35vh;
-        left: 407vh;
+        left: @offsetLeft_transportII + 28.6vh;
         position: absolute;
         height: 20vh;
         width: 17vh;
@@ -365,7 +378,7 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: 18vh;
-        left: 382vh;
+        left: @offsetLeft_transportII + 3.6vh;
         position: absolute;/*Change to fixed after pass*/
         height: 20vh;
         width: 39vh;
@@ -377,7 +390,7 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: 18vh;
-        left: 382vh;
+        left: @offsetLeft_transportII + 3.6vh;
         position: fixed;
         height: 20vh;
         width: 39vh;
@@ -389,7 +402,7 @@ body,
     }
 
     .story-text {
-        left: 479vh;
+        left: @offsetLeft_transportII + 100.6vh;
     }
 }
 
@@ -400,9 +413,9 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: 592.5vh;
+        left: @offsetLeft_market;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 215vh;
     }
 
@@ -411,8 +424,8 @@ body,
         background-repeat: repeat;
         background-size:contain;
         z-index: 6;
-        bottom: 19vh;
-        left: 592.5vh;
+        bottom: @groundheight;
+        left: @offsetLeft_market;
         position: absolute;
         height: 67vh;
         width: 215vh;
@@ -423,8 +436,8 @@ body,
         background-repeat: no-repeat;
         background-size:contain;
         z-index: 6;
-        bottom: 19vh;
-        left: 624.5vh;
+        bottom: @groundheight;
+        left: @offsetLeft_market + 31.5vh;
         position: absolute;
         height: 32vh;
         width: 20vh;
@@ -436,14 +449,14 @@ body,
         background-size: contain;
         z-index: 6;
         bottom: 9vh;
-        left: 700vh;
+        left: @offsetLeft_market + 107vh;
         position: absolute;
         height: 62vh;
         width: 90vh;
     }
 
     .story-text {
-
+        left: @offsetLeft_market + 100vh;
     }
 }
 
@@ -454,7 +467,7 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: 806vh;
+        left: @offsetLeft_home;
         position: absolute;
         height: @groundheight;
         width: 215vh;
@@ -465,8 +478,8 @@ body,
         background-repeat: no-repeat;
         background-size:contain;
         z-index: 6;
-        bottom: 19vh;
-        left: 850vh;
+        bottom: @groundheight;
+        left: @offsetLeft_home + 43vh;
         position: absolute;
         height: 32vh;
         width: 20vh;
@@ -478,7 +491,7 @@ body,
         background-size:contain;
         z-index: 4;
         bottom: 79vh;
-        left: 880vh;
+        left: @offsetLeft_home + 73vh;
         position: absolute;
         height: 12vh;
         width: 17vh;
@@ -490,7 +503,7 @@ body,
         background-size:contain;
         z-index: 4;
         bottom: 29vh;
-        left: 830vh;
+        left: @offsetLeft_home + 23vh;
         position: absolute;
         height: 54vh;
         width: 40vh;
@@ -502,7 +515,7 @@ body,
         background-size: contain;
         z-index: 6;
         bottom: -24.8vh;
-        left: 919vh;
+        left: @offsetLeft_home + 112vh;
         position: absolute;
         height: 62vh;
         width: 65vh;
@@ -514,7 +527,7 @@ body,
         background-size: contain;
         z-index: 6;
         bottom: 36.2vh;
-        left: 929vh;
+        left: @offsetLeft_home + 122vh;
         position: absolute;
         height: 10vh;
         width: 17vh;
@@ -532,9 +545,9 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: 1020vh;
+        left: @offsetLeft_garbage;
         position: absolute;
-        height: 19vh;
+        height: @groundheight;
         width: 215vh;
     }
 
@@ -543,8 +556,8 @@ body,
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 6;
-        bottom: 19vh;
-        left: 1120vh;
+        bottom: @groundheight;
+        left: @offsetLeft_garbage + 98vh;
         position: absolute;
         height: 42vh;
         width: 65vh;
