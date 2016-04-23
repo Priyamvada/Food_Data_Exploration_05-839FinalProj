@@ -37,9 +37,9 @@ def index():
     template = JINJA_ENVIRONMENT.get_template('templates/home.html')
     return template.render()
 
-@app.route('/index')
+@app.route('/story')
 def narrative():
-    template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+    template = JINJA_ENVIRONMENT.get_template('templates/story.html')
     return template.render()
 
 @app.route('/references')
