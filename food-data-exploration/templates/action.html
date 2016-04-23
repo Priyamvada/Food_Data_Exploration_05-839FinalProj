@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Get Involved</title>
+	<meta name="author" content="Priyamvada, Qianxu, Samyak and Sachin" />
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/fw-home.css" />
+
+</head>
+<style>
+#banner {
+	background-image: url(../images/giphy.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+<body>
+
+
+<div id="fullpage">
+	<div class="section" id="banner">
+		<div class="intro">
+			<h2 class="inverted">Do you want to find out how much you contribute to this mess?</h2>
+		</div>
+	</div>
+	<div class="section">
+		<div class="title">
+			<h2>Find your footprint</h2>
+		</div>
+	</div>
+	<div class="section" id="journey">
+		<div class="title">
+			<h2>Clickable logos of all campaigns we have heard of!</h2>
+			<p>Tweet Share, Change.org, Link to foundations</p>
+		</div>
+	</div>
+	<div class="section" id="journey">
+		<div class="title">
+			<h2>References</h2>
+		</div>
+	</div>
+</div>
+
+
+</body>
+<!-- Scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/vendors/jquery.slimscroll.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+				sectionsColor: ['#4A4A4A', '#FFFFFF', '#4A4A4A', '#FFFFFF'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Question', 'Simulaton', 'Get Involved', 'Credits']
+			});
+		});
+	</script>
+</html>
