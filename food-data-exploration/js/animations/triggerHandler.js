@@ -1,6 +1,5 @@
 var animator = {
-	simpleHorizontal: function($elem, startLeft, stopLeft)	{
-		var currentScrollLeft = $(window).scrollLeft();
+	simpleHorizontal: function($elem, startLeft, stopLeft, currentScrollLeft)	{
 		if(currentScrollLeft < startLeft)	{
 			$elem.addClass('not-started');
 			$elem.removeClass('stopped');

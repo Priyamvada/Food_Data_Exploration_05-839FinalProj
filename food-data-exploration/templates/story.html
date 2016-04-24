@@ -11,78 +11,89 @@
   <div class="full-width uiview">
     <div id="bgColor"></div>
     <div class="container full-width" id="scrollContainer">
-    <section class="scene" id="transportation-scene-I">
-      <div id="transportation-I-text" class="story-text">
-        <h3>This is the farm. Too big and too small oranges are never harvested (4%). Amount of water that goes into growing a single orange can be estimated to be 13.8 gallons.</h3>
-      </div>
-      <div id="food-truck" class="truck"></div>
-      <div class="mountains"></div>
-      <div class="trees"></div>
-      <div class="ground"></div>
-      <div class="cloud-1"></div>
-      <div class="cloud-2"></div>
-      <div class="cloud-3"></div>
-    </section>
-    <section class="scene" id="food-processing-scene">
-      <div id="food-processing-text" class="story-text">
-        <h3>About 3% is wasted in transport which includes storage and shipping.</h3>
-      </div>
-      <div class="apparatus"></div>
-      <div class="building-1"></div>
-      <div class="building-2"></div>
-      <div class="building-3"></div>
-      <div class="cloud-1"></div>
-      <div class="cloud-2"></div>
-    </section>
-    <section class="scene" id="transportation-scene-II">
-      <div id="transportation-II-text" class="story-text">
-        <h3>About 7 % is wasted in processing. This also involves food rejection due to ugly appearance. 75% of this rejected food is considered edible.</h3>
-      </div>
-      <div class="mountains"></div>
-      <div class="ground"></div>
-      <div class="trees"></div>
-      <div class="cloud-1"></div>
-      <div class="cloud-2"></div>
-      <div class="cloud-3"></div>
-      <div id="food-truck-2" class="truck"></div>
-    </section>
-    <section class="scene" id="market">
-      <div class="ground"></div>
-      <div class="shelf-back"></div>
-      <div class="girl"></div>
-      <div class="shelf"></div>
-    </section>
-    <section class="scene" id="home">
-      <div class="ground"></div>
-      <div class="table"></div>
-      <div class="window"></div>
-      <div class="clock"></div>
-      <div class="girl"></div>
-      <div class="fruit-bowl"></div>
-    </section>
-    <section class="scene" id="garbage">
-      <div class="ground"></div>
-      <div class="garbage"></div>
-    </section>
+      <!--<section class="scene" id="harvest-scene">
+        <div id="transportation-I-text" class="story-text">
+          <h3>This is the farm. Too big and too small oranges are never harvested (4%). Amount of water that goes into growing a single orange can be estimated to be 13.8 gallons.</h3>
+        </div>
+        <div id="food-truck" class="truck not-started"></div>
+        <div class="mountains"></div>
+        <div class="trees"></div>
+        <div class="ground"></div>
+        <div class="cloud-1"></div>
+        <div class="cloud-2"></div>
+        <div class="cloud-3"></div>
+      </section>-->
+      <section class="scene" id="transportation-scene-I">
+        <div id="transportation-I-text" class="story-text">
+          <h3>This is the farm. Too big and too small oranges are never harvested (4%). Amount of water that goes into growing a single orange can be estimated to be 13.8 gallons.</h3>
+        </div>
+        <div id="food-truck" class="truck not-started"></div>
+        <div class="mountains"></div>
+        <div class="trees"></div>
+        <div class="ground"></div>
+        <div class="cloud-1"></div>
+        <div class="cloud-2"></div>
+        <div class="cloud-3"></div>
+      </section>
+      <section class="scene" id="food-processing-scene">
+        <div id="food-processing-text" class="story-text">
+          <h3>About 3% is wasted in transport which includes storage and shipping.</h3>
+        </div>
+        <div class="apparatus"></div>
+        <div class="building-1"></div>
+        <div class="building-2"></div>
+        <div class="building-3"></div>
+        <div class="cloud-1"></div>
+        <div class="cloud-2"></div>
+      </section>
+      <section class="scene" id="transportation-scene-II">
+        <div id="transportation-II-text" class="story-text">
+          <h3>About 7 % is wasted in processing. This also involves food rejection due to ugly appearance. 75% of this rejected food is considered edible.</h3>
+        </div>
+        <div class="mountains"></div>
+        <div class="ground"></div>
+        <div class="trees"></div>
+        <div class="cloud-1"></div>
+        <div class="cloud-2"></div>
+        <div class="cloud-3"></div>
+        <div id="food-truck-2" class="truck not-started"></div>
+      </section>
+      <section class="scene" id="market">
+        <div class="ground"></div>
+        <div class="shelf-back"></div>
+        <div class="girl"></div>
+        <div class="shelf"></div>
+      </section>
+      <section class="scene" id="home">
+        <div class="ground"></div>
+        <div class="table"></div>
+        <div class="window"></div>
+        <div class="clock"></div>
+        <div class="girl"></div>
+        <div class="fruit-bowl"></div>
+      </section>
+      <section class="scene" id="garbage">
+        <div class="ground"></div>
+        <div class="garbage"></div>
+      </section>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- The Scroll Magic Library START-->
-  <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-  <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-  <!-- The Scroll Magic Library END-->
-  <script src="../js/jquery.mousewheel.min.js"></script>
-  <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
-  <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.0.js"></script>
   
+  <!-- The Scroll Magic Library START-->
+  <!--<script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+  <!-- The Scroll Magic Library END-->
+  <!--<script src="../js/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>-->
+  
+  <!-- Horizontal Scroll 
   <script type="text/javascript">
   // init controller
   var controller = new ScrollMagic.Controller({vertical: false});
-  </script>
   
-  <!-- Horizontal Scroll -->
-  <script type="text/javascript">
     $(function() {
 
      $("body").mousewheel(function(event, delta) {
@@ -95,7 +106,7 @@
 
 
   });
-  </script>
+  </script>-->
   <script type="text/javascript" src="../js/animations/triggerHandler.js"></script>
   <script type="text/javascript" src="../js/animations/transportation.js"></script>
 </body>

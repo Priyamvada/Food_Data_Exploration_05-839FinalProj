@@ -1,8 +1,8 @@
 @groundheight: 19vh;
 @backgroundblue: #ECF5FF;
 
-@offsetLeft_farm: 0vh;
-@offsetLeft_transportI: @offsetLeft_farm + 0vh;
+@offsetLeft_harvest: 0vh;
+@offsetLeft_transportI: @offsetLeft_harvest + 0vh;
 @offsetLeft_processing: @offsetLeft_transportI + 205vh;
 @offsetLeft_transportII: @offsetLeft_processing + 173.4vh;
 @offsetLeft_market: @offsetLeft_transportII + 214.6vh;
@@ -385,7 +385,7 @@ body,
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 8;
-        bottom: 18vh;
+        bottom: @groundheight;
         left: 3.6vh;
         position: fixed;
         height: 20vh;
@@ -402,6 +402,10 @@ body,
         position: absolute;
     }
 
+    #food-truck-2 {
+        -webkit-animation: shakeCar .1s infinite alternate;
+        animation: shakeCar .1s infinite alternate
+    }
 
     .oranges {
         background: url("../images/transportation/food-truck.svg");
@@ -413,11 +417,6 @@ body,
         position: fixed;
         height: 20vh;
         width: 39vh;
-    }
-
-    #food-truck-2 {
-        -webkit-animation: shakeCar .1s infinite alternate;
-        animation: shakeCar .1s infinite alternate
     }
 
     .story-text {

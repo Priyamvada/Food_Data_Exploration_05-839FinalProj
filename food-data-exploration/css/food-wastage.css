@@ -331,7 +331,7 @@ body,
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 8;
-  bottom: 18vh;
+  bottom: 19vh;
   left: 3.6vh;
   position: fixed;
   height: 20vh;
@@ -345,6 +345,10 @@ body,
   left: 554vh;
   position: absolute;
 }
+#transportation-scene-II #food-truck-2 {
+  -webkit-animation: shakeCar .1s infinite alternate;
+  animation: shakeCar 0.1s infinite alternate;
+}
 #transportation-scene-II .oranges {
   background: url("../images/transportation/food-truck.svg");
   background-repeat: no-repeat;
@@ -355,10 +359,6 @@ body,
   position: fixed;
   height: 20vh;
   width: 39vh;
-}
-#transportation-scene-II #food-truck-2 {
-  -webkit-animation: shakeCar .1s infinite alternate;
-  animation: shakeCar 0.1s infinite alternate;
 }
 #transportation-scene-II .story-text {
   left: 479vh;
