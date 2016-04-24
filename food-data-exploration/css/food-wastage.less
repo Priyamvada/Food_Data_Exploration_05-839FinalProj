@@ -9,6 +9,9 @@
 @offsetLeft_home: @offsetLeft_market + 214vh;
 @offsetLeft_garbage: @offsetLeft_home + 215vh;
 
+@width_truckI: 39vh;
+@width_truckII: 39vh; 
+
 
 html {
     height: 100%;
@@ -90,7 +93,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 10vh;
-        left: @offsetLeft_farm + 15vh;
+        left: @offsetLeft_transportI + 15vh;
         position: absolute;
         height: 55vh;
         width: 76vh;
@@ -102,7 +105,7 @@ body,
         background-size:contain;
         z-index: 6;
         bottom: 0vh;
-        left: @offsetLeft_farm;
+        left: @offsetLeft_transportI;
         position: absolute;
         height: @groundheight;
         width: 205vh;
@@ -114,7 +117,7 @@ body,
         background-size:contain;
         z-index: 5;
         bottom: 15vh;
-        left: @offsetLeft_farm + 120vh;
+        left: @offsetLeft_transportI + 120vh;
         position: absolute;
         height: 45vh;
         width: 215vh;
@@ -126,7 +129,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 64vh;
-        left: @offsetLeft_farm + 76vh;
+        left: @offsetLeft_transportI + 76vh;
         position: absolute;
         height: 10vh;
         width: 15vh;
@@ -139,7 +142,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 73vh;
-        left: @offsetLeft_farm + 130vh;
+        left: @offsetLeft_transportI + 130vh;
         position: absolute;
         height: 20vh;
         width: 20vh;
@@ -152,7 +155,7 @@ body,
         background-size: contain;
         z-index: 5;
         bottom: 35vh;
-        left: @offsetLeft_farm + 30vh;
+        left: @offsetLeft_transportI + 30vh;
         position: absolute;
         height: 17vh;
         width: 17vh;
@@ -165,14 +168,19 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: 16.5vh;
-        left: @offsetLeft_farm + 5vh;
+        left: 5vh;
         position: fixed;
         height: 20vh;
-        width: 39vh;
+        width: @width_truckI;
     }
 
-    .truck.moving   {
-        left: @offsetLeft_farm + 5vh;
+    .truck.not-started  {
+        left: @offsetLeft_transportI + 5vh;
+        position: absolute;
+    }
+
+    .truck.stopped  {
+        left: @offsetLeft_processing - @width_truckI;
         position: absolute;
     }
 
@@ -182,7 +190,7 @@ body,
     }
 
     .story-text {
-        left: @offsetLeft_farm + 79vh;
+        left: @offsetLeft_transportI + 79vh;
     }
 }
 
@@ -378,11 +386,22 @@ body,
         background-size: contain;
         z-index: 8;
         bottom: 18vh;
-        left: @offsetLeft_transportII + 3.6vh;
-        position: absolute;/*Change to fixed after pass*/
+        left: 3.6vh;
+        position: fixed;
         height: 20vh;
-        width: 39vh;
+        width: @width_truckII;
     }
+
+    .truck.not-started  {
+        left: @offsetLeft_transportII + 3.6vh;
+        position: absolute;
+    }
+
+    .truck.stopped  {
+        left: @offsetLeft_market - @width_truckII;
+        position: absolute;
+    }
+
 
     .oranges {
         background: url("../images/transportation/food-truck.svg");
