@@ -5,14 +5,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Get Involved</title>
 	<meta name="author" content="Priyamvada, Qianxu, Samyak and Sachin" />
-
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/fw-home.css" />
+	<!-- Flipclock CSS -->
+	<link rel="stylesheet" href="../js/flipclock/compiled/flipclock.css">
 
 </head>
 <style>
 #banner {
-	background-image: url(../images/giphy.gif);
+	background-image: url(../images/action/giphy.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -23,19 +25,54 @@
 <div id="fullpage">
 	<div class="section" id="banner">
 		<div class="intro">
-			<h2 class="inverted">Do you want to find out how much you contribute to this mess?</h2>
+			<h2 class="inverted">The World's Food</h2>
+			<div class="clock" style="margin:2em;"></div>
+			<div class="message"></div>
 		</div>
-	</div>
-	<div class="section">
-		<div class="title">
-			<h2>Find your footprint</h2>
-			<p>Two drop downs, a rotating knob + a table</p>
+		<div class="intro">
+			<table>
+				<tr>
+					<th>Produced</th>
+					<th>Consumed</th>
+					<th>Wasted</th>
+				</tr>
+				<tr>
+					<td><span id="produced-current">0</span> <em> tonnes.</em></td>
+					<td><span id="consumed-current">0</span> <em> tonnes.</em></td>
+					<td><span id="wasted-current">0</span> <em> tonnes.</em></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="intro">
+			<div id="slider"></div>
+			<table>
+				<tr>
+					<th>Produced</th>
+					<th>Consumed</th>
+					<th>Wasted</th>
+				</tr>
+				<tr>
+					<td><span id="produced-desired">0</span> <em> tonnes.</em></td>
+					<td><span id="consumed-desired">0</span> <em> tonnes.</em></td>
+					<td><span id="wasted-desired">0</span> <em> tonnes.</em></td>
+				</tr>
+			</table>
 		</div>
 	</div>
 	<div class="section" id="journey">
 		<div class="title">
-			<h2>Clickable logos of all campaigns we have heard of!</h2>
-			<p>Tweet Share, Change.org, Link to foundations</p>
+			<p>Logos to be added</p>
+			<a href="http://www.thinkeatsave.org/"></a>
+			<a href="http://www.endfoodwastenow.org/"></a>
+			<a href="http://www.stopfoodwaste.ie/"></a>
+			<a href="http://www.endfoodwaste.org/"></a>
+			
+		<!-- twitter Share button -->
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="It's time to stop the waste! Now or Never." data-size="large" data-hashtags="FoodWaste">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
 		</div>
 	</div>
 	<div class="section" id="journey">
@@ -49,11 +86,13 @@
 </body>
 <!-- Scripts -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/vendors/jquery.slimscroll.js"></script>
-
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/vendors/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../js/flipclock/compiled/flipclock.js"></script>
+<script src="../js/animateNumber/demo/jquery.color.min.js"></script>
+<script src="../js/animateNumber/jquery.animateNumber.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -64,6 +103,104 @@
 				navigationPosition: 'right',
 				navigationTooltips: ['Question', 'Simulaton', 'Get Involved', 'Credits']
 			});
+		});
+	</script>
+
+	<!-- Clock -->
+	<script type="text/javascript">
+		var clock;
+		var prod_rate = 14.9; //tonnes per second
+		var cons_rate = 7.45; //tonnes per second
+
+		var desired_prod_rate_base = 14.9; //tonnes per second
+		var desired_cons_rate_base = 7.45; //tonnes per second
+
+		var desired_prod_rate = 14.9; //tonnes per second
+		var desired_cons_rate = 7.45; //tonnes per second
+
+		$("#slider").slider({
+		                 range: 1,
+		                 min: 0,
+		                 max: 100,
+		                 
+		                 slide: function (event, ui) {
+		                     //$("#para").text(ui.value);
+		                     var waste_rate = desired_prod_rate_base - desired_cons_rate_base;
+		                     var changePercentage = parseInt(ui.value);
+		                     var new_waste_rate = waste_rate - (changePercentage / 100) * waste_rate;
+		                     desired_cons_rate = desired_prod_rate - new_waste_rate;
+		                     console.log(desired_cons_rate);
+		                 },
+					});
+
+
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	interval: function() {
+		        		var prodCount = parseInt(document.getElementById("produced-current").innerHTML);
+		        		var consCount = parseInt(document.getElementById("consumed-current").innerHTML);
+		        		var wasteCount = parseInt(document.getElementById("wasted-current").innerHTML);
+		        		
+						var prodCountDes = parseInt(document.getElementById("produced-desired").innerHTML);
+		        		var consCountDes = parseInt(document.getElementById("consumed-desired").innerHTML);
+		        		var wasteCountDes = parseInt(document.getElementById("wasted-desired").innerHTML);
+
+		        		//animate count
+		        		var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+							
+							$('#produced-current').animateNumber(
+							  {
+							    number: prodCount+prod_rate,
+							    numberStep: comma_separator_number_step
+							  }
+							);
+
+							$('#consumed-current').animateNumber(
+							  {
+							    number: consCount+cons_rate,
+							    numberStep: comma_separator_number_step
+							  }
+							);
+
+							$('#wasted-current').animateNumber(
+							  {
+							    number: wasteCount+(prod_rate-cons_rate),
+							    numberStep: comma_separator_number_step
+							  }
+							);
+
+							$('#produced-desired').animateNumber(
+							  {
+							    number: prodCountDes+desired_prod_rate,
+							    numberStep: comma_separator_number_step
+							  }
+							);
+
+							$('#consumed-desired').animateNumber(
+							  {
+							    number: consCountDes+desired_cons_rate,
+							    numberStep: comma_separator_number_step
+							  }
+							);
+
+							$('#wasted-desired').animateNumber(
+							  {
+							    number: wasteCountDes+(desired_prod_rate-desired_cons_rate),
+							    numberStep: comma_separator_number_step
+							  }
+							);
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(0);
+		    clock.setCountdown(false);
+		    clock.start();
 		});
 	</script>
 </html>

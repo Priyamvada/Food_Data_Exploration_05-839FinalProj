@@ -1,0 +1,178 @@
+@pure-white : #FFFFFF;
+@sunset : #FD614E;
+
+#banner {
+	background-image: url(../images/action/cropfield.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section{
+	text-align:center;
+}
+
+.masthead {
+	h1 {
+		font-size: 5em;
+		color: @pure-white;
+	}
+
+	h2 {
+		color: @pure-white;
+		margin-bottom: -5%;
+	}
+
+	h3 {
+		color: @pure-white;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform : translateY(0);
+  }
+	40% {
+    transform : translateY(-30px);
+  }
+	60% {
+    transform : translateY(-15px);
+  }
+}
+
+
+@keyframes slide {
+	0%, 20%, 50%, 80%, 100% {
+    transform : translateX(0);
+  }
+	40% {
+    transform : translateX(-30px);
+  }
+	60% {
+    transform : translateX(-15px);
+  }
+}
+
+body {
+  background: black;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/homepage/shape.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bounce {
+  animation: bounce 2s infinite normal ease-out;
+}
+
+.slide-content {
+	margin-left: 28%;
+	width: 60%
+}
+
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	font-style: italic;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: @pure-white;
+
+	&:before {
+		display: block;
+		content: "\201C";
+		font-size: 80px;
+		position: absolute;
+		left: -20px;
+		top: -20px;
+		color: @pure-white;
+	}
+
+	em {
+		color: @sunset;
+	}
+}
+
+.ground {
+    background: url("../images/homepage/ground.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    z-index: 5;
+    bottom: 0vh;
+    left: 0vh;
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+}
+
+.journey-text {
+    background: url("../images/homepage/journey-text.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 30%;
+    left: 15%;
+    position: absolute;
+    height: 40%;
+    width: 40%;
+}
+
+.door {
+	background: url("../images/homepage/door.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: -1%;
+    left: 50%;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+
+.arrow-side {
+  	background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    bottom: 46%;
+    left: 52%;
+    position: absolute;
+  	height: 10%;
+  	width: 3%;
+  	background-image: url(../images/homepage/arrow-right.svg);
+}
+
+.swoosh {
+  animation: slide 2s infinite normal ease-out;
+}
+
+#journey.section {
+	.masthead {
+		margin-left: -30%;
+
+		h1 {
+			font-size: 3em;
+			color: @pure-white;
+		}
+
+		h2 {
+			font-size: 3em;
+			color: @pure-white;
+		}
+
+		h2 {
+			margin-bottom: -2%;
+			font-size: 2em;
+			color: @pure-white;
+		}
+	}
+}

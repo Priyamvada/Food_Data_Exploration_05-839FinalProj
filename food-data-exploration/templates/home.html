@@ -7,82 +7,76 @@
 	<meta name="author" content="Priyamvada, Qianxu, Samyak and Sachin" />
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/fw-home.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
 
 </head>
-<style>
-#banner {
-	background-image: url(../images/homepage/garbage.png);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 30%;
-}
-</style>
 <body>
 
+	<div id="fullpage">
+		<div class="section" id="banner">
+			<div class="masthead">
+				<h2>An Interactive Story on Food Waste</h2>
+				<h1>Hunger Games</h1>
+			</div>
+			<div class="arrow bounce"></div>
+		</div>
+		<div class="section">
+			<div class="slide">
+				<div class="slide-content">
+					<blockquote><em>127.6 billion dollars</em> is the value of food wasted by Americans every year... <em>74.6 billion dollars</em> is the value of food stamps issued every year by the US government"</blockquote>
+				</div>
+			</div>
 
-<div id="fullpage">
-	<div class="section" id="banner">
-		<div class="intro">
-			<h1 class="inverted">Hunger Games</h1>
-			<br/>
-			<h4 class="inverted">An Interactive Story on Food Waste</h4>
+			<div class="slide">
+				<div class="slide-content">
+					<blockquote>Land the size of 1.5 times that of the United States is used to grow food, livestock and diary that <em>no one would eat</em></blockquote>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="slide-content">
+					<blockquote>If food waste was a country, it would be the <em>third biggest greenhouse gas emitter</em> after US and China</em></blockquote>
+				</div>
+			</div>
+			
+			<div class="slide">
+				<div class="slide-content">
+					<blockquote>The amount of water that goes into making that single hamburger, equals that of a <em>90 minute shower</em>... The USA alone consumes <em>50 billion hamburgers</em> a year</blockquote>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="journey">
+			<div class="ground"></div>
+			<a href="story">
+				<div class="door"></div>
+			</a>
+			<div class="masthead">
+				<h2>Wanna know more?</h2>
+				<h1>Let's Go on a <br/>Journey</h1>
+			</div>
+			<div class="arrow-side swoosh"></div>
 		</div>
 	</div>
-	<div class="section">
-	    <div class="slide">
-			<div class="intro-slide">
-				<h3 class="inverted">"<em>127.6 billion dollars</em> is the value of food wasted by Americans every year...<em>74.6 billion dollars</em> is the value of food stamps issued every year by the US government."</h3>
-			</div>
-		</div>
-
-	    <div class="slide">
-	    	<div class="intro-slide">
-				<h3 class="inverted">"Worldwide, land the size of 1 and a half USA is used to grow food, livestock or dairy production that <em>no one would eat."</em></h3>
-			</div>
-		</div>
-
-		<div class="slide">
-			<div class="intro-slide">
-				<h3 class="inverted">"If food waste was a country it would be the third biggest greenhouse gas emitter after US and China."</em></h3>
-			</div>
-		</div>
-
-		<div class="slide">
-			<div class="intro-slide">
-				<h3 class="inverted">"Water lost in growing food can be used by households of US, Canada and Mexico combined for a year."</em></h3>
-			</div>
-		</div>
-		
-	</div>
-	<div class="section" id="journey">
-		<div class="ground"></div>
-		<div class="door"></div>
-		<a href="story">
-			<div class="journey-text"></div>
-		</a>
-	</div>
-</div>
 
 
 </body>
 <!-- Scripts -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/vendors/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/vendors/jquery.slimscroll.js"></script>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#4A4A4A', '#292929', '#4A4A4A'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Introduction', 'Problem Urgency', 'Let\'s go on a journey']
-			});
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors: ['Introduction', 'Stats', 'Journey'],
+			sectionsColor: ['#4A4A4A', '#292929', '#4A4A4A'],
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: ['Introduction', 'Problem Urgency', 'Let\'s go on a journey']
 		});
-	</script>
+	});
+</script>
 </html>
