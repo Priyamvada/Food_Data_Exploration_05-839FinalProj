@@ -1,0 +1,33 @@
+.section {
+  text-align: center;
+}
+.masthead h1 {
+  font-size: 4em;
+  color: #000000;
+}
+.masthead h2 {
+  color: #000000;
+}
+.masthead h3 {
+  color: #000000;
+}
+.masthead .clock {
+  margin-left: 23%;
+}
+#slider {
+  margin-left: 25%;
+  width: 50%;
+}
+td.col-table {
+  width: 50%;
+}
+td.col {
+  padding: 0 1.5em 0 1.5em;
+}
+table.stats {
+  width: 100%;
+  margin: 2% 15% 0% 12%;
+}
+em {
+  color: #FD614E;
+}
