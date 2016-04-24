@@ -75,7 +75,7 @@ var scene = new ScrollMagic.Scene({
             triggerHook: 0.2,
             offset: farmer_trigger,
             duration: 400
-        }).setTween(harvest_animation).addIndicators().addTo(controller);
+        }).setTween(harvest_animation).addTo(controller);
 
 
 });

@@ -17,14 +17,14 @@
 @offsetLeft_home: @offsetLeft_market + @width_market;
 @offsetLeft_garbage: @offsetLeft_home + @width_home;
 
-@width_truckI: 39vh;
-@width_truckII: 39vh;
+@width_truckI: 48vh;
+@width_truckII: 48vh;
 @width_truckParking: 35vh;
 @width_goodOranges: 42vh;
 @width_badOranges: 15vh;
 
 @offsetHarvestLeft_farmer: 70vh;
-
+@offsetOrangeTrolley: @offsetHarvestLeft_farmer + 30vh;
 
 html {
     height: 100%;
@@ -58,7 +58,7 @@ body {
 body,
 .uiview {
     height: 100%;
-    width: 1200vh;
+    width: 1450vh;
     overflow-y: hidden
 }
 
@@ -212,6 +212,108 @@ body,
         height: 8vh;
         width: @width_badOranges;
     }
+
+    .trolley {
+        background: url("../images/harvest/trolley.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 8;
+        bottom: @groundheight;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley;
+        position: absolute;
+        height: 20vh;
+        width: 24vh;
+    }
+
+    .trolley-oranges-1 {
+        background: url("../images/harvest/trolley-orange-1.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: @groundheight;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 11;
+        position: absolute;
+        height: 10vh;
+        width: 10vh;
+        display:none;
+    }
+
+    .trolley-oranges-2 {
+        background: url("../images/harvest/trolley-orange-2.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: @groundheight;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 7;
+        position: absolute;
+        height: 11vh;
+        width: 10vh;
+        display:none;
+    }
+
+    .trolley-oranges-3 {
+        background: url("../images/harvest/trolley-orange-3.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: @groundheight;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 9;
+        position: absolute;
+        height: 12vh;
+        width: 10vh;
+        display:none;
+    }
+
+    .trolley-oranges-4 {
+        background: url("../images/harvest/trolley-orange-4.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 6;
+        bottom: 23vh;
+        left: 106vh;
+        position: absolute;
+        height: 10vh;
+        width: 11vh;
+        display:none;
+    }
+
+    .trolley-oranges-5 {
+        background: url("../images/harvest/trolley-orange-5.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 6;
+        bottom: 23vh;
+        left: 108vh;
+        position: absolute;
+        height: 11vh;
+        width: 14vh;
+        display:none;
+    }
+
+    .trolley-oranges-6 {
+        background: url("../images/harvest/trolley-orange-6.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 6;
+        bottom: 25vh;
+        left: 112vh;
+        position: absolute;
+        height: 7vh;
+        width: 10vh;
+        display:none;
+    }
+
+    .segregation-room {
+        background: url("../images/harvest/segregation.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 11;
+        bottom: @groundheight;
+        left: 185vh;
+        position: absolute;
+        height: 50vh;
+        width: 65vh;
+    }
 }
 
 #transportation-scene-I{
@@ -298,7 +400,7 @@ body,
         bottom: 16.5vh;
         left: 5vh;
         position: fixed;
-        height: 20vh;
+        height: 24vh;
         width: @width_truckI;
     }
 
@@ -332,8 +434,6 @@ body,
     .story-text {
         left: @offsetLeft_transportI + 79vh;
     }
-
-
 }
 
 @keyframes windmillAnimation{
@@ -376,6 +476,18 @@ body,
 
 
 #food-processing-scene {
+    .ground {
+        background: url("../images/processing/ground.svg");
+        background-repeat: repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: 0vh;
+        left: @offsetLeft_processing;
+        position: absolute;
+        height: @groundheight;
+        width: @width_processing;
+    }
+
     .building-1 {
         background: url("../images/processing/building-1.svg");
         background-repeat: no-repeat;
@@ -443,16 +555,82 @@ body,
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 8;
-        bottom: -17vh;
+        bottom: @groundheight;
         left: @offsetLeft_processing + 5.5vh;
         position: absolute;
-        height: 77vh;
-        width: 104vh;
+        height: 43vh;
+        width: 130vh;
+    }
+
+    .dial-one {
+        background: url("../images/processing/rotary-dial-one.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 13;
+        bottom: 50.5vh;
+        left: 527vh;
+        position: absolute;
+        height: 3vh;
+        width: 2vh;
+        transform-origin: 90% 50%;
+        animation: windmillAnimation 1s infinite linear;
+    }
+
+    .dial-two {
+        background: url("../images/processing/rotary-dial-two.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 13;
+        bottom: 50.5vh;
+        left: 536vh;
+        position: absolute;
+        height: 3vh;
+        width: 2vh;
+        transform-origin: 0% 41%;
+        animation: windmillAnimation 0.5s infinite linear;
+    }
+
+    .smoke {
+        background: url("../images/processing/smoke.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 10;
+        bottom: 63.5vh;
+        left: 516vh;
+        position: absolute;
+        height: 10vh;
+        width: 8vh;
+        animation: shakeCar 0.5s infinite linear;
     }
 
     .story-text {
         left: @offsetLeft_processing + 74.5vh;
     }
+
+    .oranges {
+        background: url("../images/processing/oranges.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 8;
+        bottom: @groundheight + 21vh;
+        left: @offsetLeft_processing + 7.5vh;
+        position: absolute;
+        height: 7vh;
+        width: 30vh;
+    }
+
+    .packaged-oranges {
+        background: url("../images/processing/packaged-oranges.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 8;
+        bottom: @groundheight + 21vh;
+        left: @offsetLeft_processing + 50.5vh;
+        position: absolute;
+        height: 10vh;
+        width: 30vh;
+    }
+
 }
 
 #transportation-scene-II {
@@ -539,7 +717,7 @@ body,
         bottom: @groundheight;
         left: 3.6vh;
         position: fixed;
-        height: 20vh;
+        height: 24vh;
         width: @width_truckII;
     }
 

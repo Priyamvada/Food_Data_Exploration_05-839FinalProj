@@ -29,7 +29,7 @@ body {
 body,
 .uiview {
   height: 100%;
-  width: 1200vh;
+  width: 1450vh;
   overflow-y: hidden;
 }
 #bgColor {
@@ -167,6 +167,100 @@ body,
   height: 8vh;
   width: 15vh;
 }
+#harvest-scene .trolley {
+  background: url("../images/harvest/trolley.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 8;
+  bottom: 19vh;
+  left: 100vh;
+  position: absolute;
+  height: 20vh;
+  width: 24vh;
+}
+#harvest-scene .trolley-oranges-1 {
+  background: url("../images/harvest/trolley-orange-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 19vh;
+  left: 111vh;
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  display: none;
+}
+#harvest-scene .trolley-oranges-2 {
+  background: url("../images/harvest/trolley-orange-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 19vh;
+  left: 107vh;
+  position: absolute;
+  height: 11vh;
+  width: 10vh;
+  display: none;
+}
+#harvest-scene .trolley-oranges-3 {
+  background: url("../images/harvest/trolley-orange-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 19vh;
+  left: 109vh;
+  position: absolute;
+  height: 12vh;
+  width: 10vh;
+  display: none;
+}
+#harvest-scene .trolley-oranges-4 {
+  background: url("../images/harvest/trolley-orange-4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 23vh;
+  left: 106vh;
+  position: absolute;
+  height: 10vh;
+  width: 11vh;
+  display: none;
+}
+#harvest-scene .trolley-oranges-5 {
+  background: url("../images/harvest/trolley-orange-5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 23vh;
+  left: 108vh;
+  position: absolute;
+  height: 11vh;
+  width: 14vh;
+  display: none;
+}
+#harvest-scene .trolley-oranges-6 {
+  background: url("../images/harvest/trolley-orange-6.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 25vh;
+  left: 112vh;
+  position: absolute;
+  height: 7vh;
+  width: 10vh;
+  display: none;
+}
+#harvest-scene .segregation-room {
+  background: url("../images/harvest/segregation.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 11;
+  bottom: 19vh;
+  left: 185vh;
+  position: absolute;
+  height: 50vh;
+  width: 65vh;
+}
 #transportation-scene-I .mountains {
   background: url("../images/transportation/mountains.svg");
   background-repeat: no-repeat;
@@ -244,15 +338,15 @@ body,
   bottom: 16.5vh;
   left: 5vh;
   position: fixed;
-  height: 20vh;
-  width: 39vh;
+  height: 24vh;
+  width: 48vh;
 }
 #transportation-scene-I .truck.not-started {
   left: 220vh;
   position: absolute;
 }
 #transportation-scene-I .truck.stopped {
-  left: 439vh;
+  left: 430vh;
   position: absolute;
 }
 #transportation-scene-I #food-truck {
@@ -307,6 +401,17 @@ body,
     -webkit-transform: translateY(1px);
     transform: translateY(1px);
   }
+}
+#food-processing-scene .ground {
+  background: url("../images/processing/ground.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 0vh;
+  left: 478vh;
+  position: absolute;
+  height: 19vh;
+  width: 173.4vh;
 }
 #food-processing-scene .building-1 {
   background: url("../images/processing/building-1.svg");
@@ -370,14 +475,74 @@ body,
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 8;
-  bottom: -17vh;
+  bottom: 19vh;
   left: 483.5vh;
   position: absolute;
-  height: 77vh;
-  width: 104vh;
+  height: 43vh;
+  width: 130vh;
+}
+#food-processing-scene .dial-one {
+  background: url("../images/processing/rotary-dial-one.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 13;
+  bottom: 50.5vh;
+  left: 527vh;
+  position: absolute;
+  height: 3vh;
+  width: 2vh;
+  transform-origin: 90% 50%;
+  animation: windmillAnimation 1s infinite linear;
+}
+#food-processing-scene .dial-two {
+  background: url("../images/processing/rotary-dial-two.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 13;
+  bottom: 50.5vh;
+  left: 536vh;
+  position: absolute;
+  height: 3vh;
+  width: 2vh;
+  transform-origin: 0% 41%;
+  animation: windmillAnimation 0.5s infinite linear;
+}
+#food-processing-scene .smoke {
+  background: url("../images/processing/smoke.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+  bottom: 63.5vh;
+  left: 516vh;
+  position: absolute;
+  height: 10vh;
+  width: 8vh;
+  animation: shakeCar 0.5s infinite linear;
 }
 #food-processing-scene .story-text {
   left: 552.5vh;
+}
+#food-processing-scene .oranges {
+  background: url("../images/processing/oranges.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 8;
+  bottom: 40vh;
+  left: 485.5vh;
+  position: absolute;
+  height: 7vh;
+  width: 30vh;
+}
+#food-processing-scene .packaged-oranges {
+  background: url("../images/processing/packaged-oranges.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 8;
+  bottom: 40vh;
+  left: 528.5vh;
+  position: absolute;
+  height: 10vh;
+  width: 30vh;
 }
 #transportation-scene-II .mountains {
   background: url("../images/transportation/mountains.svg");
@@ -456,15 +621,15 @@ body,
   bottom: 19vh;
   left: 3.6vh;
   position: fixed;
-  height: 20vh;
-  width: 39vh;
+  height: 24vh;
+  width: 48vh;
 }
 #transportation-scene-II .truck.not-started {
   left: 655vh;
   position: absolute;
 }
 #transportation-scene-II .truck.stopped {
-  left: 827.4vh;
+  left: 818.4vh;
   position: absolute;
 }
 #transportation-scene-II #food-truck-2 {
