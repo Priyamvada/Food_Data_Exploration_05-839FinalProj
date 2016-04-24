@@ -144,6 +144,14 @@ body,
   height: 20vh;
   width: 39vh;
 }
+#transportation-scene-I .truck.not-started {
+  left: 5vh;
+  position: absolute;
+}
+#transportation-scene-I .truck.stopped {
+  left: 166vh;
+  position: absolute;
+}
 #transportation-scene-I #food-truck {
   -webkit-animation: shakeCar .1s infinite alternate;
   animation: shakeCar 0.1s infinite alternate;
@@ -184,7 +192,7 @@ body,
   background-size: contain;
   z-index: 5;
   bottom: -5vh;
-  left: 203.8vh;
+  left: 205vh;
   position: absolute;
   height: 67vh;
   width: 87vh;
@@ -195,7 +203,7 @@ body,
   background-size: contain;
   z-index: 5;
   bottom: -5vh;
-  left: 267.8vh;
+  left: 267.3vh;
   position: absolute;
   height: 94vh;
   width: 87vh;
@@ -206,7 +214,7 @@ body,
   background-size: contain;
   z-index: 5;
   bottom: -5vh;
-  left: 312.8vh;
+  left: 312.3vh;
   position: absolute;
   height: 94vh;
   width: 97vh;
@@ -217,7 +225,7 @@ body,
   background-size: contain;
   z-index: 5;
   bottom: 72vh;
-  left: 203.8vh;
+  left: 205vh;
   position: absolute;
   height: 19vh;
   width: 27vh;
@@ -229,7 +237,7 @@ body,
   background-size: contain;
   z-index: 5;
   bottom: 72vh;
-  left: 356.8vh;
+  left: 356.3vh;
   position: absolute;
   height: 19vh;
   width: 27vh;
@@ -241,13 +249,13 @@ body,
   background-size: contain;
   z-index: 8;
   bottom: -17vh;
-  left: 209.8vh;
+  left: 210.5vh;
   position: absolute;
   height: 77vh;
   width: 104vh;
 }
 #food-processing-scene .story-text {
-  left: 279vh;
+  left: 279.5vh;
 }
 #transportation-scene-II .mountains {
   background: url("../images/transportation/mountains.svg");
@@ -324,11 +332,18 @@ body,
   background-size: contain;
   z-index: 8;
   bottom: 18vh;
-  left: 382vh;
-  position: absolute;
-  /*Change to fixed after pass*/
+  left: 3.6vh;
+  position: fixed;
   height: 20vh;
   width: 39vh;
+}
+#transportation-scene-II .truck.not-started {
+  left: 382vh;
+  position: absolute;
+}
+#transportation-scene-II .truck.stopped {
+  left: 554vh;
+  position: absolute;
 }
 #transportation-scene-II .oranges {
   background: url("../images/transportation/food-truck.svg");
@@ -354,7 +369,7 @@ body,
   background-size: contain;
   z-index: 6;
   bottom: 0vh;
-  left: 592.5vh;
+  left: 593vh;
   position: absolute;
   height: 19vh;
   width: 215vh;
@@ -365,7 +380,7 @@ body,
   background-size: contain;
   z-index: 6;
   bottom: 19vh;
-  left: 592.5vh;
+  left: 593vh;
   position: absolute;
   height: 67vh;
   width: 215vh;
@@ -392,13 +407,16 @@ body,
   height: 62vh;
   width: 90vh;
 }
+#market .story-text {
+  left: 693vh;
+}
 #home .ground {
   background: url("../images/home/ground.svg");
   background-repeat: repeat;
   background-size: contain;
   z-index: 6;
   bottom: 0vh;
-  left: 806vh;
+  left: 807vh;
   position: absolute;
   height: 19vh;
   width: 215vh;
@@ -464,7 +482,7 @@ body,
   background-size: contain;
   z-index: 6;
   bottom: 0vh;
-  left: 1020vh;
+  left: 1022vh;
   position: absolute;
   height: 19vh;
   width: 215vh;
