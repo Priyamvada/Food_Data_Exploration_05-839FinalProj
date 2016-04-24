@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="59px" viewBox="0 0 69 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>hens</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="farm" transform="translate(-556.000000, -600.000000)">
+            <g id="hens" transform="translate(553.000000, 600.000000)">
+                <path d="M18.5,55.5 L13.5,56.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18.5,55.5 L16.5,58.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18.5,55.5 L20.5,58.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M46.5,55.5 L43.5,58.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M46.5,55.5 L46.5,58.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M46.5,55.5 L49.5,56.5" id="Line" stroke="#602900" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M25,43 L18.5,55.5" id="Line" stroke="#602900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M47,43 L40.5,55.5" id="Line" stroke="#602900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(43.500000, 49.500000) scale(-1, 1) translate(-43.500000, -49.500000) "></path>
+                <circle id="Oval-161" fill="#FFFFFF" cx="23.5" cy="43.5" r="6.5"></circle>
+                <circle id="Oval-161" fill="#FFFFFF" cx="41.5" cy="43.5" r="6.5"></circle>
+                <polygon id="Polygon-9" fill="#FD614E" transform="translate(69.500000, 9.000000) rotate(-270.000000) translate(-69.500000, -9.000000) " points="69.5 6.5 71.5 11.5 67.5 11.5"></polygon>
+                <path d="M56.8525374,4.79424912 C57.9433429,3.19991827 59.8515529,3.09458985 61.1142584,4.55854472 L62.6585054,6.34891302 C63.9213834,7.81306793 64.6135434,10.5370508 64.2064178,12.4241543 L60.5086756,29.563883 C60.1006861,31.4549911 58.5768811,31.9644881 57.1132156,30.7087856 L48.4333376,23.2621767 C46.9660664,22.0033808 46.6633963,19.6867876 47.751686,18.0961337 L56.8525374,4.79424912 Z" id="Rectangle-18" fill="#FFFFFF"></path>
+                <path d="M33,47 C46.8925171,47 58.4219305,39.4452543 60.6217148,29.5375965 C60.870544,28.416889 61,27.2660759 61,26.0926858 C61,14.5458949 48.463973,14 33,14 C17.536027,14 5,14.5458949 5,26.0926858 C5,37.6394766 17.536027,47 33,47 Z" id="Oval-157" fill="#FFFFFF"></path>
+                <circle id="Oval-158" fill="#FFFFFF" cx="62" cy="8" r="6"></circle>
+                <path d="M5.51876963,10.6152605 C6.26932723,6.25711591 9.09767258,5.54623742 11.8211026,9.00845938 L19.1850413,18.3700329 C21.9151661,21.8407657 20.6846151,25.640101 16.4392234,26.8553145 L7.77848968,29.3343886 C4.59299118,30.2462151 2.46633564,28.3393481 3.02798278,25.0781201 L5.51876963,10.6152605 Z" id="Rectangle-17" fill="#FFFFFF" transform="translate(11.787910, 18.188639) rotate(-14.000000) translate(-11.787910, -18.188639) "></path>
+                <circle id="Oval-160" fill="#4A4A4A" cx="63" cy="6" r="1"></circle>
+                <path d="M62,3 C64.209139,3 65.6293089,3.82842712 65.6293089,3 C65.6293089,2.17157288 64.209139,0 62,0 C59.790861,0 58.4608581,2.17157288 58.4608581,3 C58.4608581,3.82842712 59.790861,3 62,3 Z" id="Oval-159" fill="#FD614E"></path>
+            </g>
+        </g>
+    </g>
+</svg>

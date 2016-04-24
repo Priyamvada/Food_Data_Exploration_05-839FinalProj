@@ -1,16 +1,29 @@
 @groundheight: 19vh;
 @backgroundblue: #ECF5FF;
 
+@width_harvest: 215vh;
+@width_transportI: 263vh;
+@width_processing: 173.4vh;
+@width_transportII: 215vh;
+@width_market: 214vh;
+@width_home: 215vh;
+@width_garbage: 215vh;
+
 @offsetLeft_harvest: 0vh;
-@offsetLeft_transportI: @offsetLeft_harvest + 0vh;
-@offsetLeft_processing: @offsetLeft_transportI + 205vh;
-@offsetLeft_transportII: @offsetLeft_processing + 173.4vh;
-@offsetLeft_market: @offsetLeft_transportII + 214.6vh;
-@offsetLeft_home: @offsetLeft_market + 214vh;
-@offsetLeft_garbage: @offsetLeft_home + 215vh;
+@offsetLeft_transportI: @offsetLeft_harvest + @width_harvest;
+@offsetLeft_processing: @offsetLeft_transportI + @width_transportI;
+@offsetLeft_transportII: @offsetLeft_processing + @width_processing;
+@offsetLeft_market: @offsetLeft_transportII + @width_transportII;
+@offsetLeft_home: @offsetLeft_market + @width_market;
+@offsetLeft_garbage: @offsetLeft_home + @width_home;
 
 @width_truckI: 39vh;
-@width_truckII: 39vh; 
+@width_truckII: 39vh;
+@width_truckParking: 35vh;
+@width_goodOranges: 42vh;
+@width_badOranges: 15vh;
+
+@offsetHarvestLeft_farmer: 70vh;
 
 
 html {
@@ -86,6 +99,121 @@ body,
     width: 100%
 }
 
+#harvest-scene  {
+    .farm-background    {
+        background: url("../images/harvest/farm-background.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: 4vh;
+        left: @offsetLeft_harvest;
+        position: absolute;
+        height: 67vh;
+        width: @width_harvest;
+    }
+
+    #windmill-fan   {
+        background: url("../images/harvest/windmill-fan.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 7;
+        bottom: 62vh;
+        left: @offsetLeft_harvest + 6.5vh;
+        position: absolute;
+        height: 17vh;
+        width: 17vh;
+        animation: windmillAnimation 10s infinite linear;
+    }
+
+    .ground {
+        background: url("../images/harvest/ground.svg");
+        background-repeat: repeat;
+        background-size:contain;
+        z-index: 6;
+        bottom: 0vh;
+        left: @offsetLeft_harvest;
+        position: absolute;
+        height: @groundheight;
+        width: @width_harvest;
+    }
+
+    .cloud-2 {
+        background: url("../images/common/cloud-1.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 5;
+        bottom: 68vh;
+        left: @offsetLeft_harvest + 76vh;
+        position: absolute;
+        height: 25vh;
+        width: 25vh;
+        animation: cloudAnimation 30s infinite normal ease-out;
+    }
+
+    .cloud-1 {
+        background: url("../images/common/cloud-2.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 5;
+        bottom: 55vh;
+        left: @offsetLeft_harvest + 130vh;
+        position: absolute;
+        height: 10vh;
+        width: 15vh;
+        animation: cloudAnimation 30s infinite normal ease-out;
+    }
+
+    .cloud-3 {
+        background: url("../images/common/cloud-3.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 5;
+        bottom: 65vh;
+        left: @offsetLeft_harvest + 30vh;
+        position: absolute;
+        height: 17vh;
+        width: 17vh;
+        animation: cloudAnimation 30s infinite normal ease-out;
+    }
+
+    .farmer {
+        background: url("../images/harvest/farmer.svg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        z-index: 8;
+        bottom: @groundheight;
+        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer;
+        position: absolute;
+        height: 32vh;
+        width: 20vh;
+    }
+
+    .orange-pile {
+        bottom: @groundheight - 1vh;
+        position: absolute;
+    }
+
+    .orange-pile.good   {
+        background: url("../images/harvest/good-orange-pile.svg");
+        background-size:contain;
+        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer - @width_goodOranges * 3/4;
+        background-repeat: no-repeat;
+        z-index: 9;
+        height: 16vh;
+        width: @width_goodOranges;
+    }
+
+    .orange-pile.bad   {
+        background: url("../images/harvest/bad-orange-pile.svg");
+        background-size:contain;
+        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer + @width_badOranges;
+        background-repeat: no-repeat;
+        z-index: 9;
+        height: 8vh;
+        width: @width_badOranges;
+    }
+}
+
 #transportation-scene-I{
     .mountains {
         background: url("../images/transportation/mountains.svg");
@@ -108,7 +236,7 @@ body,
         left: @offsetLeft_transportI;
         position: absolute;
         height: @groundheight;
-        width: 205vh;
+        width: @width_transportI;
     }
 
     .trees {
@@ -120,11 +248,11 @@ body,
         left: @offsetLeft_transportI + 120vh;
         position: absolute;
         height: 45vh;
-        width: 215vh;
+        width: @width_transportI;
     }
 
     .cloud-1 {
-        background: url("../images/farm-transport/cloud-1.svg");
+        background: url("../images/common/cloud-1.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -137,7 +265,7 @@ body,
     }
 
     .cloud-2 {
-        background: url("../images/farm-transport/cloud-2.svg");
+        background: url("../images/common/cloud-2.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -150,7 +278,7 @@ body,
     }
 
     .cloud-3 {
-        background: url("../images/farm-transport/cloud-3.svg");
+        background: url("../images/common/cloud-3.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -189,8 +317,31 @@ body,
         animation: shakeCar .1s infinite alternate
     }
 
+    #truck-parking-space {
+        background: url("../images/farm-transport/truck-parking-space.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 9;
+        bottom: 13vh;
+        left: @offsetLeft_processing - @width_truckParking + 0.5vh;
+        position: absolute;
+        height: @width_truckParking;
+        width: @width_truckParking;
+    }
+
     .story-text {
         left: @offsetLeft_transportI + 79vh;
+    }
+
+
+}
+
+@keyframes windmillAnimation{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
     }
 }
 
@@ -262,7 +413,7 @@ body,
     }
 
     .cloud-1 {
-        background: url("../images/processing/cloud-2.svg");
+        background: url("../images/common/cloud-2.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -275,7 +426,7 @@ body,
     }
 
     .cloud-2 {
-        background: url("../images/processing/cloud-2.svg");
+        background: url("../images/common/cloud-2.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -326,7 +477,7 @@ body,
         left: @offsetLeft_transportII;
         position: absolute;
         height: @groundheight;
-        width: 215vh;
+        width: @width_transportII;
     }
 
     .trees {
@@ -338,11 +489,11 @@ body,
         left: @offsetLeft_transportII + 118.6vh;
         position: absolute;
         height: 45vh;
-        width: 215vh;
+        width: @width_transportII;
     }
 
     .cloud-1 {
-        background: url("../images/transportation/cloud-1.svg");
+        background: url("../images/common/cloud-1.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -355,7 +506,7 @@ body,
     }
 
     .cloud-2 {
-        background: url("../images/transportation/cloud-2.svg");
+        background: url("../images/common/cloud-2.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -368,7 +519,7 @@ body,
     }
 
     .cloud-3 {
-        background: url("../images/transportation/cloud-3.svg");
+        background: url("../images/common/cloud-3.svg");
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 5;
@@ -434,7 +585,7 @@ body,
         left: @offsetLeft_market;
         position: absolute;
         height: @groundheight;
-        width: 215vh;
+        width: @width_market;
     }
 
     .shelf-back {
@@ -446,7 +597,7 @@ body,
         left: @offsetLeft_market;
         position: absolute;
         height: 67vh;
-        width: 215vh;
+        width: @width_market;
     }
 
     .girl {
@@ -488,7 +639,7 @@ body,
         left: @offsetLeft_home;
         position: absolute;
         height: @groundheight;
-        width: 215vh;
+        width: @width_home;
     }
 
     .girl {
@@ -566,7 +717,7 @@ body,
         left: @offsetLeft_garbage;
         position: absolute;
         height: @groundheight;
-        width: 215vh;
+        width: @width_garbage;
     }
 
     .garbage {

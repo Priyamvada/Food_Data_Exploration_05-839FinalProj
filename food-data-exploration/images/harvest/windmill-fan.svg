@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="201px" height="201px" viewBox="0 0 201 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>WindmillFan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="farm" transform="translate(-69.000000, -174.000000)">
+            <g id="WindmillFan" transform="translate(69.000000, 174.000000)">
+                <g id="Group-11" fill="#FAB233">
+                    <polygon id="Polygon-1" transform="translate(151.000000, 101.000000) scale(-1, -1) rotate(-270.000000) translate(-151.000000, -101.000000) " points="151 51 182 151 120 151"></polygon>
+                    <polygon id="Polygon-1" points="101 101 132 201 70 201"></polygon>
+                    <polygon id="Polygon-1" transform="translate(136.275649, 64.275649) rotate(-135.000000) translate(-136.275649, -64.275649) " points="136.275649 14.2756493 167.275649 114.275649 105.275649 114.275649"></polygon>
+                    <polygon id="Polygon-1" transform="translate(100.000000, 50.000000) rotate(-180.000000) translate(-100.000000, -50.000000) " points="100 0 131 100 69 100"></polygon>
+                    <polygon id="Polygon-1" transform="translate(62.275649, 64.275649) rotate(-225.000000) translate(-62.275649, -64.275649) " points="62.2756493 14.2756493 93.2756493 114.275649 31.2756493 114.275649"></polygon>
+                    <polygon id="Polygon-1" transform="translate(50.000000, 100.000000) rotate(-270.000000) translate(-50.000000, -100.000000) " points="50 50 81 150 19 150"></polygon>
+                    <polygon id="Polygon-1" transform="translate(62.275649, 137.275649) rotate(-315.000000) translate(-62.275649, -137.275649) " points="62.2756493 87.2756493 93.2756493 187.275649 31.2756493 187.275649"></polygon>
+                    <polygon id="Polygon-1" transform="translate(136.275649, 137.275649) scale(-1, 1) rotate(-315.000000) translate(-136.275649, -137.275649) " points="136.275649 87.2756493 167.275649 187.275649 105.275649 187.275649"></polygon>
+                </g>
+                <circle id="Oval-2" fill="#C57C43" cx="100" cy="101" r="26"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
