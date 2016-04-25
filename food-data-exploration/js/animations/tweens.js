@@ -139,6 +139,6 @@ var processing_scene = new ScrollMagic.Scene({
             triggerHook: 0.2,
             offset: processing_trigger,
             duration: 500
-        }).setTween(processing_animation).addIndicators().addTo(controller);
+        }).setTween(processing_animation).addTo(controller);
 
 });
