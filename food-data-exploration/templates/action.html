@@ -10,74 +10,164 @@
 	<link rel="stylesheet" type="text/css" href="css/action.css" />
 	<!-- Flipclock CSS -->
 	<link rel="stylesheet" href="../js/flipclock/compiled/flipclock.css">
+	<link rel="stylesheet" rel="text/stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
 
 </head>
 <body>
 
 
-<div id="fullpage">
-	<div class="section" id="banner">
-		<div class="masthead">
-			<h1>The World's Food Clock</h1>
-			<div class="clock"></div>
-			<h2>The outcome possible if, people food waste by x%...</h2>
-			<h3>x = <em><span id="slider-val">0</span>%</em></h3>
-			<div id="slider"></div>
-		</div>
-		<table class="stats">
-		<tr>
-			<td class="col-table">
-				<table>
-					<tr>
-						<th>Produced</th>
-						<th>Consumed</th>
-						<th>Wasted</th>
-					</tr>
-					<tr>
-						<td class="col"><span id="produced-current">0</span> <em> tonnes.</em></td>
-						<td class="col"><span id="consumed-current">0</span> <em> tonnes.</em></td>
-						<td class="col"><span id="wasted-current">0</span> <em> tonnes.</em></td>
-					</tr>
-				</table>
-			</td>
-			<td class="col-table">
-				<table>
-					<tr>
-						<th>Produced</th>
-						<th>Consumed</th>
-						<th>Wasted</th>
-					</tr>
-					<tr>
-						<td class="col"><span id="produced-desired">0</span> <em> tonnes.</em></td>
-						<td class="col"><span id="consumed-desired">0</span> <em> tonnes.</em></td>
-						<td class="col"><span id="wasted-desired">0</span> <em> tonnes.</em></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		</table>
-	</div>
-	<div class="section" id="journey">
-		<div class="title">
-			<p>Get Involved</p>
-			<a href="http://www.thinkeatsave.org/"></a>
-			<a href="http://www.endfoodwastenow.org/"></a>
-			<a href="http://www.stopfoodwaste.ie/"></a>
-			<a href="http://www.endfoodwaste.org/"></a>
-			
-		<!-- twitter Share button -->
-			<a href="https://twitter.com/share" class="twitter-share-button" data-text="It's time to stop the waste! Now or Never." data-size="large" data-hashtags="FoodWaste">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-		</div>
-	</div>
-	<div class="section" id="journey">
-		<div class="title">
-			<p>References</p>
-		</div>
-	</div>
-</div>
+	<div id="fullpage">
+        <div class="section" id="banner">
+            <div class="masthead">
+                <h1>The World's Food Clock</h1>
+                <div class="clock"></div>
+            </div>
+            <table class="ui stats single line table">
+                <thead>
+                    <tr>
+                        <th>Produced</th>
+                        <th>Consumed</th>
+                        <th>Wasted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="produced-amount">0</span>
+                                </div>
+                                <div class="label">
+                                    Tonnes
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="consumed-amount">0</span>
+                                </div>
+                                <div class="label">
+                                    Tonnes
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="wasted-amount">0</span>
+                                </div>
+                                <div class="label">
+                                    Tonnes
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><!-- <div class="ui container">
+            <div class="ui input">
+                <input id="save" type="text" placeholder="If I reduce waste by...%" onblur="foodsaved()">
+            </div>
+            <div class="ui small compact message">
+              <p>The world could save <span id="saved-wastage">0</span> tonnes of food <em>every second.</em></p>
+            </div>
+        </div> -->
+        </div>
+        <div class="section">
+            <div class="ui container">
+                <div class="title">
+                    <h1>Find your Footprint</h1>
+                </div>
+                <div class="ui form" id="form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>How many oranges did you discard last
+                            week?</label> <input id="oranges" placeholder=
+                            "Number..." type="text">
+                        </div>
+                        <div class="field">
+                            <label>What percentage of the population do you
+                            estimate with a similar behavior?</label>
+                            <div class="ui right labeled input">
+                                <input id="percentage" placeholder="Percentage"
+                                type="text">
+                                <div class="ui basic label">
+                                    %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui submit button" onclick=
+                    "calculateFootprint()">
+                        Calculate
+                    </div>
+                    <div class="ui small inline loader" id="loader"></div>
+                </div>
+                <div class="ui container" style=
+                "margin-left: 22%!important; margin-top: 2%;">
+                    <div class="ui grid">
+                        <div class="three wide column">
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="orange-count">0</span>
+                                </div>
+                                <div class="label">
+                                    tonnes
+                                </div>
+                            </div>
+                            <p>of oranges is estimated to be wasted throughout
+                            the United States at this rate</p>
+                        </div>
+                        <div class="three wide column">
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="niagara">0</span>
+                                </div>
+                                <div class="label">
+                                    minutes
+                                </div>
+                            </div>
+                            <p>of Niagara Flow Time is the required amount of
+                            water to grow that many oranges</p>
+                        </div>
+                        <div class="three wide column">
+                            <div class="ui statistic">
+                                <div class="value">
+                                    <span id="football">0</span>
+                                </div>
+                                <div class="label">
+                                    football fields
+                                </div>
+                            </div>
+                            <p>is the net area that was used to grow that many
+                            oranges throughout the United States</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">
+                <p>Get Involved</p><a href="http://www.thinkeatsave.org/"></a>
+                <a href="http://www.endfoodwastenow.org/"></a> <a href=
+                "http://www.stopfoodwaste.ie/"></a> <a href=
+                "http://www.endfoodwaste.org/"></a> 
+                <!-- twitter Share button -->
+                 <a class="twitter-share-button" data-hashtags="FoodWaste"
+                data-size="large" data-text=
+                "It's time to stop the waste! Now or Never." href=
+                "https://twitter.com/share">Tweet</a> 
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">
+                <p>References</p>
+            </div>
+        </div>
+    </div>
 
 
 </body>
@@ -90,118 +180,18 @@
 <script src="../js/animateNumber/demo/jquery.color.min.js"></script>
 <script src="../js/animateNumber/jquery.animateNumber.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+<script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['Food Clock', 'Get Involved', 'Credits'],
-				sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['World Clock Simulation', 'Get Involved', 'Credits']
-			});
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors: ['Food Clock', 'Footprint', 'Get Involved', 'Credits'],
+			sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: ['World Clock Simulation', 'Find your Footprint', 'Get Involved', 'Credits']
 		});
-	</script>
-
-	<!-- Clock -->
-	<script type="text/javascript">
-		var clock;
-		var prod_rate = 14.9; //tonnes per second
-		var cons_rate = 7.45; //tonnes per second
-
-		var desired_prod_rate_base = 14.9; //tonnes per second
-		var desired_cons_rate_base = 7.45; //tonnes per second
-
-		var desired_prod_rate = 14.9; //tonnes per second
-		var desired_cons_rate = 7.45; //tonnes per second
-
-		var slider_val = document.getElementById("slider-val");
-
-		$("#slider").slider({
-		                 range: 0.5,
-		                 min: 0,
-		                 max: 100,
-		                 
-		                 slide: function (event, ui) {
-		                     //$("#para").text(ui.value);
-		                     slider_val.innerHTML = ui.value;
-		                     var waste_rate = desired_prod_rate_base - desired_cons_rate_base;
-		                     var changePercentage = parseInt(ui.value);
-		                     var new_waste_rate = waste_rate - (changePercentage / 100) * waste_rate;
-		                     desired_cons_rate = desired_prod_rate - new_waste_rate;
-		                     console.log(desired_cons_rate);
-		                 },
-					});
-
-
-		$(document).ready(function() {
-			var clock;
-
-			clock = $('.clock').FlipClock({
-		        clockFace: 'DailyCounter',
-		        autoStart: false,
-		        callbacks: {
-		        	interval: function() {
-		        		var prodCount = parseInt(document.getElementById("produced-current").innerHTML.replace(/,/g, ''));
-		        		var consCount = parseInt(document.getElementById("consumed-current").innerHTML.replace(/,/g, ''));
-		        		var wasteCount = parseInt(document.getElementById("wasted-current").innerHTML.replace(/,/g, ''));
-		        		
-						var prodCountDes = parseInt(document.getElementById("produced-desired").innerHTML.replace(/,/g, ''));
-		        		var consCountDes = parseInt(document.getElementById("consumed-desired").innerHTML.replace(/,/g, ''));
-		        		var wasteCountDes = parseInt(document.getElementById("wasted-desired").innerHTML.replace(/,/g, ''));
-
-		        		//animate count
-		        		var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-						
-
-							$('#produced-current').animateNumber(
-							  {
-							    number: prodCount+prod_rate,
-							    numberStep: comma_separator_number_step
-							  }
-							);
-
-							$('#consumed-current').animateNumber(
-							  {
-							    number: consCount+cons_rate,
-							    numberStep: comma_separator_number_step
-							  }
-							);
-
-							$('#wasted-current').animateNumber(
-							  {
-							    number: wasteCount+(prod_rate-cons_rate),
-							    numberStep: comma_separator_number_step
-							  }
-							);
-
-							$('#produced-desired').animateNumber(
-							  {
-							    number: prodCountDes+desired_prod_rate,
-							    numberStep: comma_separator_number_step
-							  }
-							);
-
-							$('#consumed-desired').animateNumber(
-							  {
-							    number: consCountDes+desired_cons_rate,
-							    numberStep: comma_separator_number_step
-							  }
-							);
-
-							$('#wasted-desired').animateNumber(
-							  {
-							    number: wasteCountDes+(desired_prod_rate-desired_cons_rate),
-							    numberStep: comma_separator_number_step
-							  }
-							);
-		        	}
-		        }
-		    });
-				    
-		    clock.setTime(0);
-		    clock.setCountdown(false);
-		    clock.start();
-		});
-	</script>
+	});
+</script>
+<script src="../js/simulations.js"></script>
 </html>

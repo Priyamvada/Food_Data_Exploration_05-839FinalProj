@@ -4,6 +4,7 @@
 .masthead h1 {
   font-size: 4em;
   color: #000000;
+  margin-left: -5%;
 }
 .masthead h2 {
   color: #000000;
@@ -12,22 +13,24 @@
   color: #000000;
 }
 .masthead .clock {
-  margin-left: 23%;
+  margin-left: 30%;
 }
 #slider {
   margin-left: 25%;
   width: 50%;
 }
-td.col-table {
-  width: 50%;
-}
-td.col {
-  padding: 0 1.5em 0 1.5em;
-}
 table.stats {
-  width: 100%;
-  margin: 2% 15% 0% 12%;
+  width: 50%!important;
+  margin-left: 23%!important;
+  margin-top: 5%!important;
 }
 em {
   color: #FD614E;
+}
+th,
+td {
+  text-align: center!important;
+}
+.title {
+  margin: 2%;
 }
