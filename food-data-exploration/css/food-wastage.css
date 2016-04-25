@@ -519,6 +519,17 @@ body,
   width: 8vh;
   animation: shakeCar 0.5s infinite linear;
 }
+#food-processing-scene .cantilever {
+  background: url("../images/processing/cantilever-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 20.5vh;
+  left: 612vh;
+  position: absolute;
+  height: 19.5vh;
+  width: 47vh;
+}
 #food-processing-scene .story-text {
   left: 552.5vh;
 }
@@ -541,8 +552,8 @@ body,
   bottom: 40vh;
   left: 528.5vh;
   position: absolute;
-  height: 10vh;
-  width: 30vh;
+  height: 7vh;
+  width: 8vh;
 }
 #transportation-scene-II .mountains {
   background: url("../images/transportation/mountains.svg");
@@ -621,15 +632,15 @@ body,
   bottom: 19vh;
   left: 3.6vh;
   position: fixed;
-  height: 24vh;
-  width: 48vh;
+  height: 30vh;
+  width: 60vh;
 }
 #transportation-scene-II .truck.not-started {
-  left: 655vh;
+  left: 611.4vh;
   position: absolute;
 }
 #transportation-scene-II .truck.stopped {
-  left: 818.4vh;
+  left: 806.4vh;
   position: absolute;
 }
 #transportation-scene-II #food-truck-2 {

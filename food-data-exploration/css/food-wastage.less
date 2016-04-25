@@ -18,7 +18,7 @@
 @offsetLeft_garbage: @offsetLeft_home + @width_home;
 
 @width_truckI: 48vh;
-@width_truckII: 48vh;
+@width_truckII: 60vh;
 @width_truckParking: 35vh;
 @width_goodOranges: 42vh;
 @width_badOranges: 15vh;
@@ -603,6 +603,18 @@ body,
         animation: shakeCar 0.5s infinite linear;
     }
 
+    .cantilever {
+        background: url("../images/processing/cantilever-1.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 6;
+        bottom: 20.5vh;
+        left: 612vh;
+        position: absolute;
+        height: 19.5vh;
+        width: 47vh;
+    }
+
     .story-text {
         left: @offsetLeft_processing + 74.5vh;
     }
@@ -627,8 +639,8 @@ body,
         bottom: @groundheight + 21vh;
         left: @offsetLeft_processing + 50.5vh;
         position: absolute;
-        height: 10vh;
-        width: 30vh;
+        height: 7vh;
+        width: 8vh;
     }
 
 }
@@ -717,12 +729,12 @@ body,
         bottom: @groundheight;
         left: 3.6vh;
         position: fixed;
-        height: 24vh;
+        height: 30vh;
         width: @width_truckII;
     }
 
     .truck.not-started  {
-        left: @offsetLeft_transportII + 3.6vh;
+        left: @offsetLeft_transportII - 40vh;
         position: absolute;
     }
 

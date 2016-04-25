@@ -35,7 +35,8 @@ resetDims();
 $(window).on('scroll', function(e, args)	{
 	var currentScrollLeft = $(window).scrollLeft();
 	animator.simpleHorizontal(scene.$truckI, dims.lOff.transportI, dims.lOff.processing - dims.width.truckI - 35, currentScrollLeft);
-	animator.simpleHorizontal(scene.$truckII, dims.lOff.transportII, dims.lOff.market - dims.width.truckII - 35, currentScrollLeft);
+	//made the hack below. PT change it to the right way, and scold me
+	animator.simpleHorizontal(scene.$truckII, dims.lOff.transportII - 250, dims.lOff.market - dims.width.truckII - 35, currentScrollLeft);
 });
 
 $(window).on('resize', function()	{
