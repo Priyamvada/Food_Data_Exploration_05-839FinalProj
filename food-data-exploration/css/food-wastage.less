@@ -23,8 +23,8 @@
 @width_goodOranges: 42vh;
 @width_badOranges: 15vh;
 
-@offsetHarvestLeft_farmer: 70vh;
-@offsetOrangeTrolley: @offsetHarvestLeft_farmer + 30vh;
+@offsetHarvestLeft_farmer: 45vh;
+@offsetOrangeTrolley: @offsetHarvestLeft_farmer + 40vh;
 
 html {
     height: 100%;
@@ -196,7 +196,7 @@ body,
     .orange-pile.good   {
         background: url("../images/harvest/good-orange-pile.svg");
         background-size:contain;
-        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer - @width_goodOranges * 3/4;
+        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer + @width_goodOranges * 0.22;
         background-repeat: no-repeat;
         z-index: 9;
         height: 16vh;
@@ -206,7 +206,7 @@ body,
     .orange-pile.bad   {
         background: url("../images/harvest/bad-orange-pile.svg");
         background-size:contain;
-        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer + @width_badOranges;
+        left: @offsetLeft_harvest + @offsetHarvestLeft_farmer - @width_badOranges;
         background-repeat: no-repeat;
         z-index: 9;
         height: 8vh;
@@ -270,7 +270,7 @@ body,
         background-size: contain;
         z-index: 6;
         bottom: 23vh;
-        left: 106vh;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 6;
         position: absolute;
         height: 10vh;
         width: 11vh;
@@ -283,7 +283,7 @@ body,
         background-size: contain;
         z-index: 6;
         bottom: 23vh;
-        left: 108vh;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 8;
         position: absolute;
         height: 11vh;
         width: 14vh;
@@ -295,8 +295,8 @@ body,
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 6;
-        bottom: 25vh;
-        left: 112vh;
+        bottom: 24.7vh;
+        left: @offsetLeft_harvest + @offsetOrangeTrolley + 11;
         position: absolute;
         height: 7vh;
         width: 10vh;
@@ -469,11 +469,21 @@ body,
         transform: translateY(0)
     }
     to {
-        -webkit-transform: translateY(1px);
-        transform: translateY(1px)
+        -webkit-transform: translateY(0.5vh);
+        transform: translateY(0.5vh)
     }
 }
 
+@keyframes shakeSmoke {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(0.5vh);
+        transform: translateY(0.5vh)
+    }
+}
 
 #food-processing-scene {
     .ground {
@@ -600,7 +610,7 @@ body,
         position: absolute;
         height: 10vh;
         width: 8vh;
-        animation: shakeCar 0.5s infinite linear;
+        animation: shakeSmoke 0.5s infinite linear;
     }
 
     .cantilever {
@@ -734,7 +744,7 @@ body,
     }
 
     .truck.not-started  {
-        left: @offsetLeft_transportII - 40vh;
+        left: @offsetLeft_transportII - 39.5vh;
         position: absolute;
     }
 

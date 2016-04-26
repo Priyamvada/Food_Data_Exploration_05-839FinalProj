@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="137px" height="66px" viewBox="0 0 137 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>orange-middle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-838.000000, -549.000000)">
+            <g id="orange-middle" transform="translate(838.000000, 549.000000)">
+                <circle id="Oval-192" fill="#F68D2F" cx="71.5" cy="19.5" r="19.5"></circle>
+                <path d="M71.5,39 C82.2695526,39 91,30.2695526 91,19.5 C91,8.73044738 82.2695526,0 71.5,0 C71.5000002,0 71.5,8.73044738 71.5,19.5 C71.5,30.2695526 71.5000002,39 71.5,39 Z" id="Oval-192" fill="#F76A28"></path>
+                <circle id="Oval-192" fill="#F68D2F" cx="41" cy="26" r="18"></circle>
+                <path d="M41,44 C50.9411255,44 59,35.9411255 59,26 C59,16.0588745 50.9411255,8 41,8 C41.0000002,8 41,16.0588745 41,26 C41,35.9411255 41.0000002,44 41,44 Z" id="Oval-192" fill="#F76A28"></path>
+                <circle id="Oval-192" fill="#F68D2F" cx="119" cy="48" r="18"></circle>
+                <path d="M119,66 C128.941125,66 137,57.9411255 137,48 C137,38.0588745 128.941125,30 119,30 C119,30 119,38.0588745 119,48 C119,57.9411255 119,66 119,66 Z" id="Oval-192" fill="#F76A28"></path>
+                <circle id="Oval-192" fill="#F68D2F" cx="81.5" cy="41.5" r="19.5"></circle>
+                <path d="M81.5,61 C92.2695526,61 101,52.2695526 101,41.5 C101,30.7304474 92.2695526,22 81.5,22 C81.5000002,22 81.5,30.7304474 81.5,41.5 C81.5,52.2695526 81.5000002,61 81.5,61 Z" id="Oval-192" fill="#F76A28"></path>
+                <circle id="Oval-192" fill="#F68D2F" cx="57" cy="48" r="18"></circle>
+                <path d="M57,66 C66.9411255,66 75,57.9411255 75,48 C75,38.0588745 66.9411255,30 57,30 C57.0000002,30 57,38.0588745 57,48 C57,57.9411255 57.0000002,66 57,66 Z" id="Oval-192" fill="#F76A28"></path>
+                <circle id="Oval-192" fill="#F68D2F" cx="19.5" cy="41.5" r="19.5"></circle>
+                <path d="M19.5,61 C30.2695526,61 39,52.2695526 39,41.5 C39,30.7304474 30.2695526,22 19.5,22 C19.5000002,22 19.5,30.7304474 19.5,41.5 C19.5,52.2695526 19.5000002,61 19.5,61 Z" id="Oval-192" fill="#F76A28"></path>
+            </g>
+        </g>
+    </g>
+</svg>

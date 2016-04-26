@@ -80,7 +80,8 @@
       <section class="scene" id="market">
         <div class="ground"></div>
         <div class="shelf-back"></div>
-        <div class="girl"></div>
+        <div class="girl front-facing"></div>
+        <div class="girl side-facing"></div>
         <div class="shelf"></div>
       </section>
       <section class="scene" id="home">
@@ -100,11 +101,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.0.js"></script>
   
-  <!--<script src="../js/jquery.mousewheel.min.js"></script>
-  -->
+  <script src="../js/jquery.mousewheel.min.js"></script>
   
-  <!-- Horizontal Scroll 
-  <script type="text/javascript">
+  <script type="text/javascript" src="../js/animations/triggerHandler.js"></script>
+  <script type="text/javascript" src="../js/animations/transportation.js"></script>
+  
+  <!-- Scroll Magic attempts -->
+  <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <!-- Horizontal Scroll -->
+  <!--<script type="text/javascript">
   // init controller
   var controller = new ScrollMagic.Controller({vertical: false});
   
@@ -121,12 +127,6 @@
 
   });
   </script>-->
-  <script type="text/javascript" src="../js/animations/triggerHandler.js"></script>
-  <script type="text/javascript" src="../js/animations/transportation.js"></script>
-  
-  <!-- Scroll Magic attempts -->
-  <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-  <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script type="text/javascript" src="../js/animations/tweens.js"></script>
   <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="../js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>

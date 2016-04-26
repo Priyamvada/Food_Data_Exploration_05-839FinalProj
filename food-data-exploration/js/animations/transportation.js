@@ -25,7 +25,8 @@ var $market = $scrollContainer.find('.scene#market');
 
 var scene = {
 	$truckI: $transportI.find('.truck'),
-	$truckII: $transportII.find('.truck')
+	$truckII: $transportII.find('.truck'),
+	$preprocessedOranges: $processing.find('#oranges-main')
 };
 
 var dims = {};
@@ -34,9 +35,10 @@ resetDims();
 // attaching Listeners
 $(window).on('scroll', function(e, args)	{
 	var currentScrollLeft = $(window).scrollLeft();
-	animator.simpleHorizontal(scene.$truckI, dims.lOff.transportI, dims.lOff.processing - dims.width.truckI - 35, currentScrollLeft);
+	animator.simpleHorizontal(currentScrollLeft, scene.$truckI, dims.lOff.transportI, dims.lOff.processing - dims.width.truckI - 35 );
+	animator.simpleAppear(currentScrollLeft, scene.$preprocessedOranges, dims.lOff.processing - dims.width.truckI - 20);
 	//made the hack below. PT change it to the right way, and scold me
-	animator.simpleHorizontal(scene.$truckII, dims.lOff.transportII - 250, dims.lOff.market - dims.width.truckII - 35, currentScrollLeft);
+	animator.simpleHorizontal(currentScrollLeft, scene.$truckII, dims.lOff.transportII - 250, dims.lOff.market - dims.width.truckII - 35);
 });
 
 $(window).on('resize', function()	{

@@ -9,7 +9,7 @@ var controller = new ScrollMagic.Controller({vertical: false});//instantiate con
 
 var harvest_animation = new TimelineMax();
 
-var farmer_trigger = document.getElementById('farmer').offsetLeft - unitConvert(60);
+var farmer_trigger = document.getElementById('farmer').offsetLeft - unitConvert(40);
 
 //animate code start
 //harvest animation
@@ -56,7 +56,7 @@ harvest_animation.add([TweenMax.to("#trolley", 0.2, {
                 document.getElementById('trolley-oranges-6').style.display = "none";
             }
         })]).add([TweenMax.to("#farmer", 1, {
-            left: "+=10vh",
+            left: "+=20vh",
             onStart: function() {
             },
             onReverseComplete: function() {
@@ -70,12 +70,12 @@ harvest_animation.add([TweenMax.to("#trolley", 0.2, {
 var harvest_scene = new ScrollMagic.Scene({
             triggerHook: 0.2,
             offset: farmer_trigger,
-            duration: 400
+            duration: 600
         }).setTween(harvest_animation).addTo(controller);
 //Harvest Scene animations done
 
 
-var processing_trigger = document.getElementById('apparatus').offsetLeft - unitConvert(60);
+var processing_trigger = document.getElementById('apparatus').offsetLeft - unitConvert(25);
 var processing_animation = new TimelineMax();
 
 
@@ -98,7 +98,7 @@ processing_animation.add([TweenMax.to("#oranges-main", 2, {
             onReverseComplete: function() {
             }
         })]).add([TweenMax.to(["#packaged-oranges-one","#packaged-oranges-two","#packaged-oranges-three"], 2, {
-            left: "+=15vh",
+            left: "+=30vh",
             onStart: function() {
             },
             onReverseComplete: function() {
@@ -114,7 +114,7 @@ processing_animation.add([TweenMax.to("#oranges-main", 2, {
                 document.getElementById('packaged-oranges-one').style.display = "none";
             }
         })]).add([TweenMax.to(["#packaged-oranges-two","#packaged-oranges-three"], 2, {
-            left: "+=25vh",
+            left: "+=30vh",
             onStart: function() {
             },
             onReverseComplete: function() {

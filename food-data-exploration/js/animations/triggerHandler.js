@@ -1,5 +1,5 @@
 var animator = {
-	simpleHorizontal: function($elem, startLeft, stopLeft, currentScrollLeft)	{
+	simpleHorizontal: function(currentScrollLeft, $elem, startLeft, stopLeft)	{
 		if(currentScrollLeft < startLeft)	{
 			$elem.addClass('not-started');
 			$elem.removeClass('stopped');
@@ -9,6 +9,14 @@ var animator = {
 		}	else	{
 			$elem.removeClass('not-started');
 			$elem.removeClass('stopped');
+		}
+	},
+
+	simpleAppear: function(currentScrollLeft, $elem, startLeft, stopLeft)	{
+		if(currentScrollLeft < startLeft || (stopLeft != null && currentScrollLeft > stopLeft))	{
+			$elem.hide();
+		} else	{
+			$elem.show();
 		}
 	}
 };
