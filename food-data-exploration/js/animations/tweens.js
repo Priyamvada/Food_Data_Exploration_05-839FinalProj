@@ -188,7 +188,7 @@ transport_text_animation.add([TweenMax.to("#transportation-I-text", 2, {
 
 //processing text animation scene
 var processing_text_animation = new TimelineMax();
-var text_processing_trigger = document.getElementById('food-truck-2').offsetLeft - unitConvert(100);
+var text_processing_trigger = document.getElementById('food-truck-2').offsetLeft - unitConvert(150);
 
 processing_text_animation.add([TweenMax.to("#food-processing-text", 2, {
             display: 'block',
