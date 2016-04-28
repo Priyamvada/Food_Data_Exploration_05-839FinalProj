@@ -18,5 +18,21 @@ var animator = {
 		} else	{
 			$elem.show();
 		}
+	},
+
+	fadeIn: function(currentScrollLeft, $elem, startLeft, stopLeft)	{
+		if(currentScrollLeft < startLeft || (stopLeft != null && currentScrollLeft > stopLeft))	{
+			$elem.fadeOut('slow');
+		} else	{
+			$elem.fadeIn('slow');
+		}
+	},
+
+	fadeOut: function(currentScrollLeft, $elem, startLeft)	{
+		if(currentScrollLeft > startLeft)	{
+			$elem.fadeOut('slow');
+		}	else	{
+			$elem.fadeIn('slow');
+		}
 	}
 };

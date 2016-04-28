@@ -211,7 +211,7 @@ var processing_screen_text = new ScrollMagic.Scene({
 
 //market text animation scene
 var market_text_animation = new TimelineMax();
-var text_market_trigger = document.getElementById('market-shelf').offsetLeft + unitConvert(40);
+var text_market_trigger = document.getElementById('market-shelf').offsetLeft + unitConvert(10);
 
 market_text_animation.add([TweenMax.to("#market-text-II", 2, {
             display: 'block',
@@ -252,5 +252,27 @@ var home_scene_text = new ScrollMagic.Scene({
             offset: text_home_trigger,
             duration: 200
         }).setTween(home_text_animation)/*.addIndicators()*/.addTo(controller);
+
+//market text animation scene
+var market_question_animation = new TimelineMax();
+var question_market_trigger = document.getElementById('market-shelf').offsetLeft - unitConvert(50);
+
+market_question_animation.add([TweenMax.to("#market-text-I", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])
+
+var market_scene_question = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: question_market_trigger,
+            duration: 200
+        }).setTween(market_question_animation)/*.addIndicators()*/.addTo(controller);
 
 });

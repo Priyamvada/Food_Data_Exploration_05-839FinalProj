@@ -719,15 +719,29 @@ h4 {
   width: 214vh;
 }
 #market .girl {
-  background: url("../images/market/girl.svg");
+  background: url("../images/market/girl_side_profile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 6;
   bottom: 19vh;
-  left: 897.9vh;
-  position: absolute;
+  left: 15vh;
+  position: fixed;
   height: 32vh;
   width: 20vh;
+}
+#market .girl.not-started {
+  background: url("../images/market/girl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 881.4vh;
+  position: absolute;
+}
+#market .girl.stopped {
+  background: url("../images/market/girl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1128.4vh;
+  position: absolute;
 }
 #market .shelf {
   background: url("../images/market/shelf.svg");
@@ -735,18 +749,117 @@ h4 {
   background-size: contain;
   z-index: 6;
   bottom: 9vh;
-  left: 973.4vh;
+  left: 945vh;
   position: absolute;
   height: 62vh;
   width: 90vh;
 }
+#market #market-text-I {
+  display: none;
+  opacity: 0;
+  left: 950vh;
+  bottom: 7vh;
+  width: 86vh;
+  height: 13vh;
+}
 #market #market-text-II {
   display: none;
   opacity: 0;
-  left: 976.4vh;
+  left: 950vh;
   bottom: 85vh;
   width: 86vh;
   height: 13vh;
+}
+#market .oranges {
+  cursor: pointer;
+}
+#market .oranges-top-shelf {
+  background: url("../images/market/oranges-big-pile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 70.5vh;
+  position: absolute;
+  height: 10.5vh;
+  width: 20vh;
+}
+#market .oranges-middle-shelf {
+  background: url("../images/market/oranges-medium-pile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 50.5vh;
+  position: absolute;
+  height: 8vh;
+  width: 16vh;
+}
+#market .oranges-bottom-shelf {
+  background: url("../images/market/oranges-small-pile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 29.7vh;
+  position: absolute;
+  height: 6vh;
+  width: 16vh;
+}
+#market .oranges-left-column {
+  left: 950vh;
+}
+#market .oranges-middle-column {
+  left: 981vh;
+}
+#market .oranges-right-column {
+  left: 1012vh;
+}
+#market .cart {
+  background: url("../images/market/cart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 19vh;
+  left: 31.5vh;
+  position: fixed;
+  height: 22vh;
+  width: 28vh;
+}
+#market .cart-filled {
+  background: url("../images/market/cart-filled.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#market .cart.not-started {
+  left: 907.9vh;
+  position: absolute;
+}
+#market .cart.stopped {
+  left: 1052.4vh;
+  position: absolute;
+}
+#market .grocery-bag {
+  background: url("../images/market/grocery-bag.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 6;
+  bottom: 19vh;
+  left: 30vh;
+  position: fixed;
+  height: 15vh;
+  width: 28vh;
+}
+#market .grocery-bag.not-started {
+  position: absolute;
+  left: 1080.4vh;
+}
+#market .grocery-bag.stopped {
+  background: url("../images/market/empty-grocery-bag.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 1180.4vh;
+}
+#market .story-text {
+  left: 966.4vh;
 }
 #home .ground {
   background: url("../images/home/ground.svg");
@@ -758,17 +871,6 @@ h4 {
   position: absolute;
   height: 19vh;
   width: 215vh;
-}
-#home .girl {
-  background: url("../images/home/girl.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 6;
-  bottom: 19vh;
-  left: 1123.4vh;
-  position: absolute;
-  height: 32vh;
-  width: 20vh;
 }
 #home .clock {
   background: url("../images/home/clock.svg");
