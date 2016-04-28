@@ -34,3 +34,32 @@ td {
 .title {
   margin: 2%;
 }
+.arrow {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/action/down-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bounce {
+  animation: bounce 2s infinite normal ease-out;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
