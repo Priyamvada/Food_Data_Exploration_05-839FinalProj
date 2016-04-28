@@ -23,7 +23,7 @@ var calculateFootprint = function() {
 	//constants
 	var population = 350000000;//350 million
 	var orangeWaterFootprint = 52; //litres
-	var orangeWeight = 0.000131;//kilograms
+	var orangeWeight = 0.000131;//tonnes
 	var orange_tree = 1250;//oranges per tree
 	var area_tree = 140;
 

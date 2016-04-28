@@ -141,4 +141,116 @@ var processing_scene = new ScrollMagic.Scene({
             duration: 500
         }).setTween(processing_animation).addTo(controller);
 
+//harvest text animation scene
+var harvest_text_animation = new TimelineMax();
+var text_farmer_trigger = document.getElementById('farmer').offsetLeft + unitConvert(10);
+
+harvest_text_animation.add([TweenMax.to("#farm-I-text", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])
+
+var harvest_scene_text = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: text_farmer_trigger,
+            duration: 200
+        }).setTween(harvest_text_animation)/*.addIndicators()*/.addTo(controller);
+
+
+//transport text animation scene
+/*var transport_text_animation = new TimelineMax();
+var text_transport_trigger = document.getElementById('truck-parking-space').offsetLeft - unitConvert(120);
+
+transport_text_animation.add([TweenMax.to("#transportation-I-text", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])*/
+
+/*var transport_scene_text = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: text_transport_trigger,
+            duration: 200
+        }).setTween(transport_text_animation).addIndicators().addTo(controller);*/
+
+//processing text animation scene
+var processing_text_animation = new TimelineMax();
+var text_processing_trigger = document.getElementById('food-truck-2').offsetLeft - unitConvert(100);
+
+processing_text_animation.add([TweenMax.to("#food-processing-text", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])
+
+var processing_screen_text = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: text_processing_trigger,
+            duration: 200
+        }).setTween(processing_text_animation)/*.addIndicators()*/.addTo(controller);
+
+
+//market text animation scene
+var market_text_animation = new TimelineMax();
+var text_market_trigger = document.getElementById('market-shelf').offsetLeft + unitConvert(40);
+
+market_text_animation.add([TweenMax.to("#market-text-II", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])
+
+var market_scene_text = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: text_market_trigger,
+            duration: 200
+        }).setTween(market_text_animation)/*.addIndicators()*/.addTo(controller);
+
+//home text animation scene
+var home_text_animation = new TimelineMax();
+var text_home_trigger = document.getElementById('home-window').offsetLeft - unitConvert(20);
+
+home_text_animation.add([TweenMax.to("#home-text", 2, {
+            display: 'block',
+            autoAlpha: 1,
+            opacity: 1,
+            onStart: function() {
+
+            },
+            onReverseComplete: function() {
+                display: 'none'
+            }
+        })])
+
+var home_scene_text = new ScrollMagic.Scene({
+            triggerHook: 0.2,
+            offset: text_home_trigger,
+            duration: 200
+        }).setTween(home_text_animation)/*.addIndicators()*/.addTo(controller);
+
 });

@@ -4,16 +4,15 @@
   <title>Jack the Orange | An interactive story on Food Waste</title>
 
   <link href="css/food-wastage.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="full-width uiview">
     <div id="bgColor"></div>
     <div class="container full-width" id="scrollContainer">
       <section class="scene" id="harvest-scene">
-        <div id="transportation-I-text" class="story-text">
-          <h3></h3>
+        <div id="farm-I-text" class="story-text">
+          <h3>Between 1% to 30% is not harvested depending on market conditions. This is known as "shrink"</h3>
         </div>
         <div class="farm-background"></div>
         <div id="windmill-fan"></div>
@@ -34,9 +33,9 @@
         <div class="segregation-room"></div>
       </section>
       <section class="scene" id="transportation-scene-I">
-        <div id="transportation-I-text" class="story-text">
-          <h3></h3>
-        </div>
+        <!-- <div id="transportation-I-text" class="story-text">
+          <h3>Between 2% to 30% is removed in packing</h3>
+        </div> -->
         <div id="food-truck" class="truck not-started"></div>
         <div class="mountains"></div>
         <div class="trees"></div>
@@ -48,7 +47,7 @@
       </section>
       <section class="scene" id="food-processing-scene">
         <div id="food-processing-text" class="story-text">
-          <h3></h3>
+          <h3>Between 2% to 30% is removed in packing.</h3>
         </div>
         <div class="ground"></div>
         <div id="oranges-main" class="oranges"></div>
@@ -78,23 +77,35 @@
         <div id="food-truck-2" class="truck not-started"></div>
       </section>
       <section class="scene" id="market">
+        <div id="market-text-II" class="story-text">
+          <h3>The main cause of food waste here is primarily due to aesthetics</h3>
+        </div>
         <div class="ground"></div>
-        <div class="shelf-back"></div>
+        <div id="market-shelf" class="shelf-back"></div>
         <div class="girl front-facing"></div>
         <div class="girl side-facing"></div>
         <div class="shelf"></div>
       </section>
       <section class="scene" id="home">
+        <div id="home-text" class="story-text">
+          <h3>One-fourth of all the food bought by consumers is thrown away</h3>
+        </div>
         <div class="ground"></div>
         <div class="table"></div>
-        <div class="window"></div>
+        <div id="home-window" class="window"></div>
         <div class="clock"></div>
         <div class="girl"></div>
         <div class="fruit-bowl"></div>
       </section>
       <section class="scene" id="garbage">
+        <div id="garbage-text" class="story-text">
+          <h3>That's the journey of the unfortunate orange, from it's roots to the garbage can. Wanna know how much impact this tiny action can have? Let's see.</h3>
+        </div>
         <div class="ground"></div>
-        <div class="garbage"></div>
+        <div class="arrow-side swoosh"></div>
+        <a href="action">
+          <div class="garbage"></div>
+        </a>
       </section>
     </div>
   </div>
